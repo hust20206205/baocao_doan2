@@ -1,29 +1,38 @@
 import os
+import glob
 from modules.MyGit import MyGit
 from modules.MyFormat import MyFormat
 from modules.MyView import MyView
 
 message = "VuVanNghia20206205"
 
-git_path =  os.path.join(os.getcwd(), '../../../')
-init_path =  os.path.join(os.getcwd(), '../../../baocao/contents/start/init.sty')
-workspace_path = os.path.join(os.getcwd(), '../../report.code-workspace')
-gitignore_path = os.path.join(git_path, ".gitignore") 
+git_folder = os.path.join(os.getcwd(), '../../../')
 
-MyGit.chdir(git_path)
+MyGit.chdir(git_folder)
 MyGit.add()
 MyGit.commit(message)
 
-# MyFormat.latex(git_path)
-# MyFormat.markdown(git_path)
-MyFormat.basic(gitignore_path)
-MyFormat.basic(init_path)
-MyFormat.workspace(workspace_path)
+workspace_path = glob.glob(os.path.join(
+    git_folder, f'**/*.code-workspace'), recursive=True)
+gitignore_path = glob.glob(os.path.join(
+    git_folder, f'**/*.gitignore'), recursive=True)
+start_path = glob.glob(os.path.join(
+    git_folder, f'**/*.sty'), recursive=True)
+
+[MyFormat.space(i) for i in workspace_path]
+[MyFormat.space(i) for i in gitignore_path]
+[MyFormat.space(i) for i in start_path]
+
+contents =  os.path.join(git_folder, 'baocao/contents')
+main =  os.path.join(git_folder, 'baocao/main.tex') 
+
+MyFormat.latex_main(main)
+[MyFormat.latex_contents(i) for i in  glob.glob(os.path.join(
+    contents, f'**/*.tex'), recursive=True)]
 
 MyView.CloseTab()
 MyView.Target(2)
 MyView.CloseTerminal()
 MyView.CloseScrollBar()
 # MyView.CollapseFolders()
-# MyView.OpenGit()
-MyView.OpenLatex()
+# MyView.OpenLatex()

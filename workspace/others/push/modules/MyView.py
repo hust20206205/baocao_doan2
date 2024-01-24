@@ -17,18 +17,18 @@ class MyView:
         pyautogui.hotkey('ctrl', 'b')
 
     def CollapseFolders():
+        MyView.Target(1)
         pyautogui.hotkey('ctrl', 'shift', 'e')
-        # Ấn và giữ phím "Ctrl"
+
         pyautogui.keyDown('ctrl')
-        # Ấn phím mũi tên bên trái
         pyautogui.press('left')
-        # Thả phím "Ctrl"
         pyautogui.keyUp('ctrl')
+
+        MyView.Target(2)
 
     def OpenGit():
         pyautogui.hotkey('ctrl', 'shift', 'g')
 
     def OpenLatex():
         MyView.Target(2)
-        # pyautogui.hotkey('ctrl', 'alt', 'b')
         pyautogui.hotkey('ctrl', 'alt', 'v')
