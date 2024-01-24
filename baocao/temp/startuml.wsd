@@ -1,0 +1,123 @@
+@startuml Account
+
+class NguoiNopThue {
+  + MST: int
+  + Email: int
+  + Email: int
+  - privateField:  int
+
+
+
+
+
+  + publicMethod(): void
+}
+
+' class AnotherClass {
+'   # protectedField: string
+'   - privateMethod(): int
+' }
+
+' MyClass --> AnotherClass : association
+@enduml
+@startuml Account2
+
+class NguoiNopThue2 {
+  + MST: int
+  + Email: int
+  + Email: int
+  - privateField:  int
+
+
+
+
+
+  + publicMethod(): void
+}
+
+' class AnotherClass {
+'   # protectedField: string
+'   - privateMethod(): int
+' }
+
+' MyClass --> AnotherClass : association
+@enduml
+
+' <!-- Tenants  -->
+
+' id = MST
+' name
+' phoneNumber
+' email
+' address (1,2,3,City)
+'  bank(id, name)
+' updateAt OR lastEditedWhen
+
+' <!-- VaiTro -->
+
+' id, name: phải có admin
+
+' <!-- Quyen -->
+
+' id
+' name(xxx, xxx, xxx, xxx)
+
+' <!-- Người dùng -->
+
+' id
+' username = MST.admin
+' username = MST.xxxxxxxxxx
+' password
+' fullName
+' email
+' sdt
+
+' <!-- `token` -->
+
+' VaiTro
+
+' <!-- Customer -->
+
+' id
+' name
+' phoneNumber
+' email
+' address (1,2,3,City)
+' bank(id, name)
+
+' <!-- Product -->
+
+' id
+' name
+' description
+' unitPrice
+' price
+
+' <!-- Invoice -->
+
+' id
+' total
+' date
+' total_before_tax
+' total_after_tax
+' total_tax
+' taxAmount
+
+' GrandTotal
+
+' <!-- InvoiceItem -->
+
+' id
+' taxRate
+
+' quantity
+' price
+' unitPrice
+' `note` text,
+
+' <!--# Mail -->
+' <!--!================= -->
+
+' `status   '0=inactive, 1=active'`
+
+' <!-- tenant_id INT, -->
