@@ -1,0 +1,511 @@
+Chi tiết các chức năng của bài toán phụ:
+
+\begin{itemize}
+
+\item Quản lý tài khoản
+
+\begin{itemize}
+
+\item Đăng ký
+
+\begin{itemize}
+
+\item Có 2 cách đăng ký:
+
+\begin{itemize}
+
+\item Đăng ký qua tổ chức cung cấp dịch vụ hóa đơn điện tử.
+
+\item Đăng ký trên cổng thông tin điện tử của Tổng cục Thuế.
+
+\end{itemize}
+
+\item Để đăng ký, người nộp thuế cần chuẩn bị:
+
+\begin{itemize}
+
+\item Mã số thuế
+
+\item Chữ ký số %# Code QR
+
+\end{itemize}
+
+\item Người nộp thuế nhập mã số thuế để lấy thông tin thuế bao gồm: %# Code file
+
+\begin{itemize}
+
+\item Tên người nộp thuế, Mã cơ quan thuế, Tên cơ quan thuế
+
+\end{itemize}
+
+\begin{vmatrix}
+
+\begin{itemize}
+
+\item Mã số thuế có 10 ký tự đại diện cá nhân, doanh nghiệp hoặc 14 ký tự đại diện chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp-Mã chi nhánh". %# Code "Mã số thuế phải có độ dài 10 hoặc 14 ký tự và đúng định dạng."
+
+\begin{example}
+
+Mã số thuế 10 ký tự: 0123456789
+
+Mã số thuế 14 ký tự: 0123456789-001
+
+\end{example}
+
+\item Nếu mã số thuế đã tồn tại đăng ký, hệ thống sẽ thông báo: "Mã số thuế đã đăng ký sử dụng hóa đơn điện tử." %# Code
+
+\end{itemize}
+
+\end{vmatrix}
+
+\item Tiếp theo, người nộp thuế nhập các thông tin:
+
+\begin{itemize}
+
+\item Người liên hệ, Điện thoại liên hệ, Địa chỉ liên hệ, Thư điện tử
+
+\end{itemize}
+
+\begin{vmatrix}
+
+\begin{itemize}
+
+\item Người liên hệ: phải chứa một chuỗi kí tự tên hợp lệ, không có số và không được để trống. %# Code
+
+\item Điện thoại liên hệ: phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống. %# Code
+
+\item Địa chỉ liên hệ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống. %# Code
+
+\item Thư điện tử: phải chứa một chuỗi kí tự có định dạng email và không được để trống. %# Code
+
+\end{itemize}
+
+\end{vmatrix}
+
+\item Người nộp thuế chọn hình thức hóa đơn: %# Code enum
+
+\begin{itemize}
+
+\item Hóa đơn có mã của cơ quan thuế
+
+\item Hóa đơn không có mã của cơ quan thuế
+
+\end{itemize}
+
+\item Cuối cùng, người nộp thuế dùng chữ ký số để xác nhận gửi đăng ký với ngày thực hiện là ngày đang đăng ký hóa đơn điện tử.
+
+$\Rightarrow$ \emph{Sau khi gửi đăng kí, người nộp thuế sẽ nhận được thông báo của cơ quan thuế qua thư điện tử về việc tiếp nhận và chấp nhận đăng ký.} %# Code "Gửi thông tin đăng ký hóa đơn điện tử cho cơ quan thuế thành công."
+
+\end{itemize}
+
+\item Đăng nhập
+
+\begin{itemize}
+
+\item Trong thông báo chấp nhận đăng ký, người nộp thuế nhận được thông tin đăng nhập tài khoản của người quản trị bao gồm:
+
+\begin{itemize}
+
+\item Tên đăng nhập
+
+\item Mật khẩu
+
+\end{itemize}
+
+\item Người nộp thuế sử dụng thông tin đăng nhập để thực hiện đăng nhập.
+
+\begin{vmatrix}
+
+\begin{itemize}
+
+\item Nếu thông tin đăng nhập không chính xác, hệ thống sẽ thông báo: "Thông tin đăng nhập không chính xác." %# Code
+
+\end{itemize}
+
+\end{vmatrix}
+
+\end{itemize}
+
+\item Đăng xuất
+
+\begin{itemize}
+
+\item Chức năng đăng xuất tài khoản.
+
+\end{itemize}
+
+\item Quên mật khẩu
+
+\begin{itemize}
+
+\item \emph{Chức năng quên mật khẩu chỉ áp dụng cho tài khoản của người quản trị.}
+
+\item Người nộp thuế cung cấp tên đăng nhập.
+
+\item Người nộp thuế dùng chữ ký số để gửi yêu cầu khôi phục mật khẩu.
+
+$\Rightarrow$ \emph{Sau khi gửi yêu cầu, người nộp thuế sẽ nhận được mật khẩu mới qua thư điện tử.} %# Code "Gửi yêu cầu khôi phục mật khẩu thành công."
+
+\end{itemize}
+
+\item Đổi mật khẩu
+
+\begin{itemize}
+
+\item Để thay đổi mật khẩu cần cung cấp thông tin:
+
+\begin{itemize}
+
+\item Mật khẩu cũ
+
+\item Mật khẩu mới
+
+\item Nhập lại mật khẩu mới
+
+\end{itemize}
+
+\begin{vmatrix}
+
+\begin{itemize}
+
+\item Mật khẩu: phải chứa một chuỗi có độ dài lớn hơn 8 kí tự và không được để trống. %# Code
+
+\item Nếu mật khẩu cũ không chính xác, hệ thống sẽ thông báo: "Mật khẩu cũ không chính xác." %# Code
+
+\item Nếu mật khẩu mới không trùng khớp, hệ thống sẽ thông báo: "Mật khẩu mới không trùng khớp." %# Code
+
+\end{itemize}
+
+\end{vmatrix}
+
+\end{itemize}
+
+\item Thay đổi thông tin
+
+\begin{itemize}
+
+\item Trong quá trình sử dụng hóa đơn điện tử, người nộp thuế có thể thay đổi thông tin:
+
+\begin{itemize}
+
+\item Tên người nộp thuế, Người liên hệ, Điện thoại liên hệ, Địa chỉ liên hệ, Thư điện tử
+
+\end{itemize}
+
+\begin{vmatrix}
+
+\begin{itemize}
+
+\item Tên người nộp thuế: phải chứa một chuỗi kí tự tên hợp lệ, không có số và không được để trống. %# Code
+
+\item Người liên hệ: phải chứa một chuỗi kí tự tên hợp lệ, không có số và không được để trống. %# Code
+
+\item Điện thoại liên hệ: phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống. %# Code
+
+\item Địa chỉ liên hệ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống. %# Code
+
+\item Thư điện tử: phải chứa một chuỗi kí tự có định dạng email và không được để trống. %# Code
+
+\end{itemize}
+
+\end{vmatrix}
+
+\item Sau đó, người nộp thuế dùng chữ ký số để xác nhận gửi thay đổi với ngày thực hiện là ngày đang thay đổi thông tin.
+
+$\Rightarrow$ \emph{Sau khi gửi thay đổi, người nộp thuế sẽ nhận được thông báo của cơ quan thuế qua thư điện tử về việc tiếp nhận và chấp nhận thay đổi.} %# Code "Gửi thông tin thay đổi hóa đơn điện tử cho cơ quan thuế thành công."
+
+\end{itemize}
+
+\end{itemize}
+
+\item Quản lý danh mục
+
+\begin{itemize}
+
+\item Quản lý khách hàng
+
+Có chức năng tìm kiếm chi tiết, tìm kiếm tất cả, thêm, sửa, xóa đối với khách hàng có các thông tin:
+
+\begin{itemize}
+
+\item Mã, Tên, Mã số thuế, Địa chỉ, Số điện thoại, Số tài khoản, Ngân hàng
+
+\end{itemize}
+
+\begin{vmatrix}
+
+\begin{itemize}
+
+\item Tên: phải chứa một chuỗi kí tự tên hợp lệ, không có số và không được để trống. %# Code
+
+\item Mã số thuế: 10 ký tự đại diện cá nhân, doanh nghiệp hoặc 14 ký tự đại diện chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp-Mã chi nhánh". % # Code
+
+\item Địa chỉ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống. % # Code
+
+\item Số điện thoại: phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống. % # Code
+
+\item Số tài khoản: phải chứa một chuỗi kí tự và không được để trống. % # Code
+
+\item Ngân hàng: phải chứa một chuỗi kí tự ngân hàng hợp lệ và không được để trống. % # Code
+
+\end{itemize}
+
+\end{vmatrix}
+
+\item Quản lý hàng hóa, dịch vụ
+
+Có chức năng tìm kiếm chi tiết, tìm kiếm tất cả, thêm, sửa, xóa đối với hàng hóa, dịch vụ có các thông tin:
+
+\begin{itemize}
+
+\item Mã, Tên, Đơn vị tính, Đơn giá, Thuế suất, Ghi chú
+
+\end{itemize}
+
+\begin{vmatrix}
+
+\begin{itemize}
+
+\item Tên: phải chứa một chuỗi kí tự và không được để trống. %# Code
+
+\item Đơn vị tính: phải chứa một chuỗi kí tự và không được để trống. %# Code
+
+\item Đơn giá: phải có định dạng là số. %# Code
+
+\item Thuế suất: phải có định dạng là số. %# Code
+
+\item Ghi chú: nội dung không bắt buộc. %# Code
+
+\end{itemize}
+
+\end{vmatrix}
+
+\end{itemize}
+
+\item Quản lý hóa đơn
+
+\begin{itemize}
+
+\item Thêm hóa đơn
+
+\begin{itemize}
+
+\item Nhập thông tin người bán:
+
+\begin{itemize}
+
+\item Tên, Mã số thuế, Địa chỉ, Số điện thoại, Số tài khoản, Ngân hàng
+
+\end{itemize}
+
+\item Nhập thông tin người mua:
+
+\begin{itemize}
+
+\item Tên, Mã số thuế, Địa chỉ, Số điện thoại, Số tài khoản, Ngân hàng
+
+\end{itemize}
+
+\item Nhập thông tin hàng hóa, dịch vụ:
+
+\begin{itemize}
+
+\item Tên, Đơn vị tính, Đơn giá, Số lượng, Thuế suất, Ghi chú
+
+\end{itemize}
+
+\item Hệ thống tự động tính toán:
+
+\begin{itemize}
+
+\item Số hóa đơn
+
+\item Ngày lập hóa đơn
+
+\item Tổng tiền trước thuế
+
+\item Tổng tiền sau thuế
+
+\end{itemize}
+
+\end{itemize}
+
+\item Sửa hóa đơn
+
+\begin{itemize}
+
+\item Chức năng này cho phép thay đổi các thông tin trong hóa đơn.
+
+\item Hệ thống cần lưu trữ lịch sử thay đổi của hóa đơn.
+
+\end{itemize}
+
+% % Lưu ý:
+
+% % - Hãy lưu trữ thông tin ID của hóa đơn thay thế trong trạng thái "Bị thay thế" của hóa đơn gốc.
+
+% % - Hãy lưu trữ thông tin ID của hóa đơn gốc trong trạng thái "Thay thế" của hóa đơn thay thế.
+
+\item Xóa hóa đơn
+
+\begin{itemize}
+
+\item Chức năng này cho phép xóa hóa đơn.
+
+\end{itemize}
+
+\end{itemize}
+
+\item Tra cứu hóa đơn
+
+\begin{itemize}
+
+\item Tra cứu khi chưa đăng nhập
+
+\begin{itemize}
+
+\item Tra cứu hóa đơn
+
+\begin{itemize}
+
+\item Người tra cứu nhập thông tin bao gồm: mã số thuế người bán, số hóa đơn, tổng tiền sau thuế.
+
+\end{itemize}
+
+\textbf{Kết quả:}
+
+\begin{itemize}
+
+\item Nếu thông tin hóa đơn không hợp lệ, hệ thống sẽ thông báo: "Không tồn tại hóa đơn có thông tin trùng khớp với các thông tin tổ chức, cá nhân tìm kiếm." %# Code
+
+\item Nếu thông tin hóa đơn hợp lệ, hệ thống sẽ thông báo: "Tồn tại hóa đơn có thông tin trùng khớp với các thông tin tổ chức, cá nhân tìm kiếm." %# Code
+
+\item Nếu hóa đơn là hóa đơn thay thế, bị thay thế hệ thống sẽ hiển thị thông tin bổ sung về hóa đơn liên quan: "Hóa đơn này là hóa đơn thay thế cho hóa đơn có số hóa đơn là: \textbf{số hóa đơn}." hoặc "Hóa đơn này là hóa đơn bị thay thế của hóa đơn có có số hóa đơn là: \textbf{số hóa đơn}." %# Code
+
+\end{itemize}
+
+\item Tra cứu mã số thuế
+
+\begin{itemize}
+
+\item Người tra cứu nhập mã số thuế.
+
+\end{itemize}
+
+\textbf{Kết quả:}
+
+\begin{itemize}
+
+\item Nếu đã đăng kí, hệ thống sẽ hiển thị thông báo: "Mã số thuế: \textbf{mã số thuế} đã đăng ký sử dụng hóa đơn điện tử theo Nghị định 123/2020/NĐ - CP." %# Code
+
+\item Nếu NNT chưa đăng kí, hệ thống sẽ hiển thị thông báo: "Mã số thuế: \textbf{mã số thuế} chưa sử dụng hóa đơn điện tử theo Nghị định 123/2020/NĐ - CP." %# Code
+
+\end{itemize}
+
+\end{itemize}
+
+\item Tra cứu khi đã đăng nhập
+
+\begin{itemize}
+
+\item Hệ thống hỗ trợ tra cứu 2 loại hóa đơn là hóa đơn bán ra và hóa đơn mua vào.
+
+\end{itemize}
+
+\end{itemize}
+
+\item Quản lý hệ thống
+
+\begin{itemize}
+
+\item Quản lý vai trò
+
+\begin{itemize}
+
+\item Người quản trị là một vai trò cố định có quyền sử dụng tất cả các chức năng.
+
+\item Người quản trị có thể thực hiện chức năng tìm kiếm chi tiết, tìm kiếm tất cả, thêm, sửa, xóa đối với vai trò:
+
+\begin{itemize}
+
+\item Tên vai trò
+
+\item Quyền
+
+\end{itemize}
+
+\end{itemize}
+
+\begin{vmatrix}
+
+\begin{itemize}
+
+\item Tên vai trò: phải chứa một chuỗi kí tự và không được để trống. %# Code
+
+\item Các quyền trong hệ thống bao gồm: %# Code
+
+\begin{itemize}
+
+\item Thay đổi thông tin người nộp thuế
+
+\item Quản lý khách hàng
+
+\item Quản lý hàng hóa, dịch vụ
+
+\item Thêm hóa đơn
+
+\item Sửa hóa đơn
+
+\item Xóa hóa đơn
+
+\item Tra cứu hóa đơn
+
+\end{itemize}
+
+\end{itemize}
+
+\end{vmatrix}
+
+\item Quản lý người dùng
+
+\begin{itemize}
+
+\item Người quản trị có thể thực hiện chức năng tìm kiếm chi tiết, tìm kiếm tất cả, thêm, sửa, xóa đối với người dùng:
+
+\begin{itemize}
+
+\item Tên đăng nhập
+
+\item Mật khẩu
+
+\item Vai trò
+
+\end{itemize}
+
+\end{itemize}
+
+\begin{vmatrix}
+
+\begin{itemize}
+
+\item Tên đăng nhập: phải chứa một chuỗi kí tự với định dạng "Mã số thuế.Tên đăng nhập" và không được để trống. %# Code
+
+\begin{example}
+
+Tên đăng nhập: 0123456789.vvn20206205
+
+\end{example}
+
+\item Mật khẩu: phải chứa một chuỗi có độ dài lớn hơn 8 kí tự và không được để trống. %# Code
+
+\item Vai trò: là vai trò được người quản trị đã tạo. %# Code
+
+\end{itemize}
+
+\end{vmatrix}
+
+\end{itemize}
+
+\item Gửi thông tin làm việc của Tổng cục Thuế qua thư điện tử cho người nộp thuế.
+
+\end{itemize}
