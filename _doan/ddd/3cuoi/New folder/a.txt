@@ -4,48 +4,67 @@
 \usepackage{Start}
 \begin{document} % Bắt đầu
 
-% # Chốt không cần xem lại
 % \input{contents/p0_trang_bia}
 % \input{contents/p0_trang_bia}
 % \input{contents/p0_nhan_xet_cua_giang_vien_huong_dan}
 % \includepdf[pages = -]{contents/bao_cao_tien_do/lan_1.pdf}
 % \includepdf[pages = -]{contents/bao_cao_tien_do/lan_2.pdf}
+%! API gateway
+%! Service mesh(1, 2, 3, \dots)
+%! CQRS
+%! event
+%! Saga
 
-% # Chốt không cần xem lại
 % \input{contents/p0_muc_luc}
 % \input{contents/p0_loi_cam_on}
 % \input{contents/p0_danh_sach_bang}
 % \input{contents/p0_danh_sach_hinh_anh}
-% % # \input{contents/p0_danh_sach_cac_cum_tu_viet_tat}
-% % # \input{contents/p0_danh_sach_cac_thuat_ngu}
+%# \input{contents/p0_danh_sach_cac_cum_tu_viet_tat}
+%# \input{contents/p0_danh_sach_cac_thuat_ngu}
 
-% # Chốt không cần xem lại
 % \chapter*{\centering MỞ ĐẦU}
 % \addcontentsline{toc}{chapter}{MỞ ĐẦU}
 % \section*{Lý do chọn đề tài}
 % \input{contents/p001_ly_do_chon_de_tai}
 % \section*{Đối tượng và phạm vi nghiên cứu}
-% % \input{contents/p001_doi_tuong_va_pham_vi_nghien_cuu}
+% \input{contents/p001_doi_tuong_va_pham_vi_nghien_cuu}
 % \section*{Tóm tắt nội dung đồ án}
-% % \input{contents/p001_tom_tat_noi_dung_do_an}
+% \input{contents/p001_tom_tat_noi_dung_do_an}
 
-% % # Chốt không cần xem lại
-% \chapter{Tổng quan về bài toán quản lý hóa đơn điện tử}
+\chapter{Tổng quan về bài toán quản lý hóa đơn điện tử}
 % \input{contents/p1_hddt_tong_quan_ve_bai_toan_hoa_don_dien_tu}
 % \section{Các khái niệm và căn cứ pháp lý}
 % \input{contents/p1_hddt_cac_khai_niem_va_can_cu_phap_ly}
-% \section{Yêu cầu nghiệp vụ}
+\section{Yêu cầu nghiệp vụ}
 % \input{contents/p1_hddt_yeu_cau_nghiep_vu}
 % \subsection{Yêu cầu nghiệp vụ của bài toán phụ}
 % \input{contents/p1_hddt_yeu_cau_nghiep_vu_cua_bai_toan_phu}
-% \subsection{Yêu cầu nghiệp vụ của bài toán chính}
-% \subsubsection{Các chức năng thay đổi so với thực tế trong đồ án này}
-% \input{contents/p1_hddt_cac_chuc_nang_thay_doi_so_voi_thuc_te_trong_do_an_nay}
-% \subsubsection{Các chức năng tổng quan của bài toán chính}
-% \input{contents/p1_hddt_chi_tiet_cac_chuc_nang_cua_bai_toan_chinh}
 
-% # Chốt không cần xem lại
-% \chapter{Giới thiệu về kiến trúc vi dịch vụ}
+\subsection{Yêu cầu nghiệp vụ của bài toán chính}
+\subsubsection{Các chức năng thay đổi so với thực tế trong đồ án này}
+\input{contents/p1_hddt_cac_chuc_nang_thay_doi_so_voi_thuc_te_trong_do_an_nay}
+
+% \subsubsection{Các chức năng tổng quan của bài toán chính}
+% \input{contents/p1_hddt_cac_chuc_nang_tong_quan_cua_bai_toan_chinh}
+
+\subsubsection{Chi tiết các chức năng của bài toán chính}
+\input{contents/p1_hddt_chi_tiet_cac_chuc_nang_cua_bai_toan_chinh}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Giới thiệu về kiến trúc vi dịch vụ}
 % \input{contents/p2_msa_gioi_thieu_ve_kien_truc_vi_dich_vu}
 % \section{Kiến trúc nguyên khối (Monolithic architecture)}
 % \input{contents/p2_msa_kien_truc_nguyen_khoi_monolithic_architecture}
@@ -56,7 +75,6 @@
 % \section{Một số nhược điểm và thách thức của kiến trúc vi dịch vụ}
 % \input{contents/p2_msa_mot_so_nhuoc_diem_va_thach_thuc_cua_kien_truc_vi_dich_vu}
 
-% # Chốt không cần xem lại
 \chapter{Tìm hiểu về thiết kế hướng miền}
 % \input{contents/p3_ddd_tim_hieu_ve_thiet_ke_huong_mien}
 % \section{Đôi nét về thiết kế hướng miền (Domain Driven Design)}
@@ -70,7 +88,6 @@
 % \subsection{Cốt lõi của thiết kế hướng miền}
 % \input{contents/p3_ddd_cot_loi_cua_thiet_ke_huong_mien}
 
-% \newpage
 \section{Các mẫu chiến lược trong thiết kế hướng miền}
 % \input{contents/p3_ddd_cac_mau_chien_luoc_trong_thiet_ke_huong_mien}
 % \subsection{Miền phụ (Sub - Domain)}
@@ -79,25 +96,85 @@
 % \input{contents/p3_ddd_ngon_ngu_chung_ubiquitous_language}
 % \subsection{Tích hợp liên tục (Continuous Integration)}
 % \input{contents/p3_ddd_tich_hop_lien_tuc_continuous_integration}
-
-
-
-
-
-
-
-
-
-
-
-% \subsection{Bối cảnh bị giới hạn (Bounded Context)}
-% \input{contents/p3_ddd_boi_canh_bi_gioi_han_bounded_context}
-
+\subsection{Bối cảnh bị giới hạn (Bounded Context)}
+\input{contents/_a.tex}
 \subsection{Mối quan hệ bối cảnh bị giới hạn (Bounded Context Relationships)}
 \input{contents/_a.tex}
-
 \subsection{Bản đồ bối cảnh (Context Maps)}
-% \input{contents/_a.tex}
+\input{contents/_a.tex}
+\end{document}
+
+% \section{Bối cảnh bị giới hạn (Bounded Context)}
+
+Một miền cần chia đủ nhỏ để phù hợp với một nhóm cụ thể. Để đạt được điều này, chúng ta cần xác định rõ ranh giới giữa các ngữ cảnh. \emph{Bối cảnh bị giới hạn (Bounded Context)} giúp xác định rõ các ranh giới, chia miền thành các phần độc lập để giải quyết sự phức tạp trong mô hình doanh nghiệp. Bối cảnh bị giới hạn tạo ra các mô hình khác nhau cho các lĩnh vực khác nhau của miền. Bối cảnh bị giới hạn thể hiện phạm vi kinh doanh của dịch vụ.
+
+\begin{figure}[H]
+
+\centering
+
+\includegraphics[scale = 1]{pictures/boi_canh_gioi_han/main.png}
+
+\caption{Ví dụ về bối cảnh bị giới hạn trong một ngân hàng}
+
+\end{figure}
+
+\subsubsection{Cách xác định bối cảnh bị giới hạn}
+
+Để có thể xác định được bối cảnh bị giới hạn chúng ta có thể xem xét:
+
+\begin{itemize}
+
+\item Dựa vào việc phân chia các miền phụ.
+
+\item Dựa vào sơ đồ cấu trúc tổ chức các phòng ban của doanh nghiệp.
+
+\item Dựa vào modules của các ứng dụng kiến trúc nguyên khối (nếu việc phân chia tốt).
+
+\item Dựa vào trách nhiệm và hoạt động của chuyên gia miền .
+
+\end{itemize}
+
+\subsubsection{Áp dụng xác định bối cảnh bị giới hạn trong đồ án này}
+
+\subsubsection{Áp dụng xác định bối cảnh bị giới hạn trong đồ án này}
+
+\subsubsection{Áp dụng xác định bối cảnh bị giới hạn trong đồ án này}
+
+\subsubsection{Áp dụng xác định bối cảnh bị giới hạn trong đồ án này}
+
+\subsubsection{Áp dụng xác định bối cảnh bị giới hạn trong đồ án này}
+
+\subsubsection{Áp dụng xác định bối cảnh bị giới hạn trong đồ án này}
+
+\subsubsection{Áp dụng xác định bối cảnh bị giới hạn trong đồ án này}
+
+\subsubsection{Áp dụng xác định bối cảnh bị giới hạn trong đồ án này}
+
+\subsubsection{Áp dụng xác định bối cảnh bị giới hạn trong đồ án này}
+
+\subsubsection{Áp dụng xác định bối cảnh bị giới hạn trong đồ án này}
+
+\subsubsection{Áp dụng xác định bối cảnh bị giới hạn trong đồ án này}
+
+\subsubsection{Áp dụng xác định bối cảnh bị giới hạn trong đồ án này}
+
+%!<! - - Hướng dẫn 5/10 - - >
+
+%!<! - - Hướng dẫn 5/10 - - >
+
+%!<! - - Hướng dẫn 5/10 - - >
+
+%!<! - - Hướng dẫn 5/10 - - >
+
+%!<! - - Hướng dẫn 5/10 - - >
+
+%!<! - - Hướng dẫn 5/10 - - >
+
+%!<! - - Hướng dẫn 5/10 - - >
+
+%!<! - - Hướng dẫn 5/10 - - >
+
+%!<! - - Hướng dẫn 5/10 - - >
 
 % \section{Bản đồ bối cảnh (Context Maps)}
 
@@ -112,7 +189,63 @@ Các bối cảnh bị giới hạn phải độc lập trong bối cảnh riên
 \caption{Ví dụ bản đồ bối cảnh trong 1 ngân hàng}
 
 \end{figure}
-\end{document}
+
+%! Vẽ lại tiếng Việt
+
+%! Vẽ lại tiếng Việt
+
+%! Vẽ lại tiếng Việt
+
+%! Vẽ lại tiếng Việt
+
+%! Vẽ lại tiếng Việt
+
+%! Vẽ lại tiếng Việt
+
+%! Vẽ lại tiếng Việt
+
+%! Vẽ lại tiếng Việt
+
+%! Vẽ lại tiếng Việt
+
+%! Vẽ lại tiếng Việt
+
+% \section{Các mối quan hệ bối cảnh bị giới hạn}
+
+Có 3 loại mối quan hệ giữa các bối cảnh bị giới hạn là:
+
+\begin{itemize}
+
+\item Mối quan hệ đối xứng (Symmetric Relationship)
+
+\textbf{Mô tả:} Thể hiện sự tương tác 2 chiều giữa 2 bối cảnh bị giới hạn .
+
+\item Mối quan hệ bất đối xứng (Asymmetric Relationship)
+
+\textbf{Mô tả:} Thể hiện sự tương tác 1 chiều giữa 2 các bối cảnh bị giới hạn .
+
+\item Mối quan hệ 1 - nhiều (One to Many Relationship)
+
+\textbf{Mô tả:} Thể hiện sự tương tác 1 chiều giữa 1 bối cảnh bị giới hạn với nhiều bối cảnh bị giới hạn khác.
+
+\end{itemize}
+
+\begin{figure}[H]
+
+\centering
+
+\includegraphics[scale = 0.5]{pictures/cac_moi_quan_he_boi_canh_gioi_han/main.png}
+
+\caption{Các mối quan hệ bối cảnh bị giới hạn}
+
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -121,25 +254,432 @@ Các bối cảnh bị giới hạn phải độc lập trong bối cảnh riên
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
-\section{Các mẫu kỹ thuật trong thiết kế hướng miền}
+% \subsection{Mối quan hệ đối xứng (Symmetric Relationship)}
+
+% \subsubsection{Mô hình riêng biệt (Separate Ways)}
+
+Mô hình riêng biệt (Separate Ways) khi các bối cảnh bị giới hạn có quan hệ riêng biệt, không có sự phụ thuộc. Vì vậy, các bối cảnh bị giới hạn này có ngôn ngữ, mô hình, mục đích độc lập và thực thi riêng biệt. Các nhóm phát triển không phải cộng tác hay phối hợp với nhau từ đó đem lại lợi ích dễ dàng bảo trì và mở rộng hệ thống.
+
+\begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
+
+\begin{figure}[H]
+
+\centering
+
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+
+\end{figure}
+
+\end{example}
+
+% \subsubsection{Mô hình hạt nhân chung (Shared Kernel)}
+
+Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nhau. Mô hình hợp tác (Partnership) tạo điều kiện cho việc giao tiếp và cộng tác giữa các bối cảnh bị giới hạn phụ thuộc. Tuy nhiên, sự phụ thuộc này dẫn đến mức độ kết hợp cao giữa các nhóm và bối cảnh bị giới hạn, dẫn tới mất đi tính độc lập.
+
+\emph{Lưu ý: Mô hình hợp tác không phải là mô hình của các mẫu chiến lược trong thiết kế huớng miền.}
+
+Để giải quyết vấn đề bối cảnh bị giới hạn phụ thuộc lẫn nhau chúng ta có mô hình hạt nhân chung. Mô hình hạt nhân chung (Shared Kernel) cho phép các bối cảnh bị giới hạn có phần chia sẻ chung và có ranh giới phân định rõ ràng. Từ đó, tách việc quản lí các mô hình hạt nhân chung này một cách độc lập với phần còn lại của bối cảnh bị giới hạn . Khi cần thay đổi mà không phải của mô hình hạt nhân chung thì nhóm sẽ hoạt động độc lập. Thông thường, mô hình hạt nhân chung được hiện thực hóa bằng các thư viện chung. Tuy nhiên, chỉ sử dụng mô hình hạt nhân chung nếu quan hệ của các bối cảnh bị giới hạn nhỏ và ổn định để tránh quan hệ phức tạp và ràng buộc chặt chẽ.
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+\begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
+
+\begin{figure}[H]
+
+\centering
+
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+
+\end{figure}
+
+\end{example}
+
+% %! $VD: hình giao như 2 tập hợp - - >
+
+% \subsection{Mối quan hệ bất đối xứng (Asymmetric Relationship)}
+
+Trong mối quan hệ bất đối xứng, một bối cảnh bị giới hạn có sự phụ thuộc vào một bối cảnh bị giới hạn khác. Mối quan hệ này được mô tả bằng cách gán vai trò cho bối cảnh bị giới hạn :
+
+\begin{itemize}
+
+\item \textbf{Bối cảnh bị giới hạn thượng nguồn (Upstream):}
+
+\begin{itemize}
+
+\item Bối cảnh bị giới hạn cung cấp cho bối cảnh bị giới hạn khác.
+
+\item Ký hiệu: U
+
+\end{itemize}
+
+\item \textbf{Bối cảnh bị giới hạn hạ lưu (Downstream):}
+
+\begin{itemize}
+
+\item Bối cảnh bị giới hạn phụ thuộc vào bối cảnh bị giới hạn khác.
+
+\item Ký hiệu: D
+
+\end{itemize}
+
+\end{itemize}
+
+\begin{example} Mối quan hệ bất đối xứng giữa bối cảnh bị giới hạn A và bối cảnh bị giới hạn B.
+
+\begin{itemize}
+
+\item Bối cảnh bị giới hạn A ràng buộc với bối cảnh bị giới hạn B
+
+\item Bối cảnh bị giới hạn A đóng vai trò là bối cảnh bị giới hạn hạ lưu (Downstream)
+
+\item Bối cảnh bị giới hạn B đóng vai trò là bối cảnh bị giới hạn thượng nguồn (Upstream)
+
+\item Bối cảnh bị giới hạn A có kiến thức về các mô hình trong bối cảnh bị giới hạn B
+
+\item Bối cảnh bị giới hạn B không có bất kỳ kiến thức nào về mô hình trong bối cảnh bị giới hạn A
+
+\end{itemize}
+
+\begin{figure}[H]
+
+\centering
+
+\includegraphics[scale = 0.5]{pictures/moi_quan_he_bat_doi_xung/main.drawio.png}
+
+\caption{Ví dụ mối quan hệ bất đối xứng}
+
+\end{figure}
+
+\end{example}
+
+% \subsubsection{Mô hình khách hàng - nhà cung cấp (Customer - Supplier)}
+
+Mô hình khách hàng - nhà cung cấp (Customer - Supplier) được thể hiện rằng bối cảnh bị giới hạn thượng nguồn đáp ứng nhu cầu của bối cảnh bị giới hạn hạ lưu.
+
+Khi đó:
+
+\begin{itemize}
+
+\item Bối cảnh bị giới hạn thượng nguồn được gọi là nhà cung cấp.
+
+\item Bối cảnh bị giới hạn hạ lưu được gọi là khách hàng.
+
+\end{itemize}
+
+Trong thực tế, nhóm phát triển nhà cung cấp luôn tham khảo ý kiến của nhóm phát triển khách hàng và có bộ kiểm thử để đảm bảo rằng dịch vụ của nhà cung cấp đáp ứng được yêu cầu của khách hàng.
+
+% \subsubsection{Mô hình tuân thủ (Conformist)}
+
+Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp thực hiện tốt yêu cầu thì khách hàng cần tuân thủ chặt chẽ. Mô hình tuân thủ (Conformist) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu áp dụng mô hình, ngôn ngữ chung và các khái niệm của bối cảnh bị giới hạn thượng nguồn.
+
+Trong mô hình tuân thủ bối cảnh bị giới hạn hạ lưu được ký hiệu là CF.
+
+%! $VD: - - >
+
+%! $VD: A - CF - U - B - - >
+
+%! $VD: A - users(id, name) - B cũng users(id, name) - - >
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+\begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
+
+\begin{figure}[H]
+
+\centering
+
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+
+\end{figure}
+
+\end{example}
+
+% \subsubsection{Mô hình chống đổ vỡ (Anti Corruption Layer)}
+
+Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp có thể thay đổi linh hoạt không đảm bảo đáp ứng nhu cầu của khách hàng thì khách hàng cần có giải pháp xử lí. Mô hình chống đổ vỡ (Anti Corruption Layer) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu sử dụng một lớp để dịch giữa ngôn ngữ của nó và ngôn ngữ của bối cảnh bị giới hạn thượng nguồn.
+
+Trong mô hình chống đổ vỡ, mỗi bối cảnh bị giới hạn có mô hình riêng biệt và lớp chống đổ vỡ cần kiến thức về mô hình hạ lưu và thượng nguồn để bảo vệ hạ lưu và duy trì tính toàn vẹn.
+
+%@ Façade
+
+%@ Adapter
+
+Trong mô hình chống đổ vỡ bối cảnh bị giới hạn hạ lưu được ký hiệu là ACL.
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+\begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
+
+\begin{figure}[H]
+
+\centering
+
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+
+\end{figure}
+
+\end{example}
+
+% \subsection{Mối quan hệ 1 - nhiều (One to Many Relationship)}
+
+% \subsubsection{Dịch vụ máy chủ mở (Open Host Service)}
+
+Dịch vụ máy chủ mở (Open Host Service) là nhà cung cấp trong mô hình khách hàng - nhà cung cấp, dịch vụ máy chủ mở hiển thị một API công khai cho các bối cảnh bị giới hạn khác sử dụng chức năng của nhà cung cấp.
+
+Trong bản đồ bối cảnh, dịch vụ máy chủ mở được ký hiệu là OHS.
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+\begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
+
+\begin{figure}[H]
+
+\centering
+
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+
+\end{figure}
+
+\end{example}
+
+% \subsubsection{Ngôn ngữ được xuất bản (Published Language)}
+
+Khi ngôn ngữ chung ở dịch vụ máy chủ mở được các nhóm phát triển trong bối cảnh bị giới hạn hạ lưu chấp nhận. Ngôn ngữ chung này được gọi là ngôn ngữ được xuất bản (Published Language). Ngôn ngữ được xuất bản có lợi ích là tính thống nhất trong hệ thống tuy nhiên cần phân tích kĩ vì nó có thể tạo ra sự nhầm lẫn trong bối cảnh bị giới hạn hạ lưu nào đó.
+
+Trong bản đồ bối cảnh, ngôn ngữ được xuất bản kết hợp dịch vụ máy chủ mở được ký hiệu là OHS|PL.
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Vẽ lại bản đồ tiếng Việt
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+% Từ bản đồ lấy vi dụ cho các mô hình
+
+\begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
+
+\begin{figure}[H]
+
+\centering
+
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+
+\end{figure}
+
+\end{example}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Áp dụng về các mối quan hệ bối cảnh bị giới hạn}
+
+%! Hướng dẫn 6/6
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Các mẫu kỹ thuật trong thiết kế hướng miền}
 %@%%%%%%%%%%%%%%%%%%%%%%%%%%%% now()
 \end{document}
