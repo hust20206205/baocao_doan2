@@ -1,0 +1,143 @@
+Một miền kinh doanh lớn được tạo thành từ nhiều \emph{miền phụ (Sub - Domain)}. Trong thực tế, một miền kinh doanh phức tạp không thể có một chuyên gia miền có kiến thức về tất cả các miền phụ.
+
+\begin{example} Trong miền thương mại điện tử lớn có thể có một số miền phụ sau:
+
+\begin{itemize}
+
+\item \textbf{Miền phụ quản lý hàng tồn kho:} liên quan đến việc quản lý sản phẩm trong kho hàng.
+
+\item \textbf{Miền phụ quản lý khách hàng:} liên quan đến việc quản lý tài khoản khách hàng.
+
+\item \textbf{Miền phụ vận chuyển:} liên quan đến việc quản lý việc vận chuyển giao hàng.
+
+\end{itemize}
+
+\end{example}
+
+\subsubsection{Phân loại các miền phụ}
+
+Trong thiết kế hướng miền, có ba loại miền phụ là:
+
+\begin{itemize}
+
+\item Miền phụ chung (Generic Subdomain)
+
+Miền phụ chung cung cấp các giải pháp có sẵn mà doanh nghiệp có thể mua. Miền phụ chung có thể được tìm thấy trên nhiều ngành. Doanh nghiệp không thể đạt được bất kỳ lợi thế cạnh tranh so với đối thủ bằng cách thực hiện những điều khác biệt trong miền phụ chung.
+
+\begin{example} Các miền phụ chung \emph{"quản lý nhân sự"} hay \emph{"quản lý cơ sở vật chất"} không tạo thêm bất kỳ giá trị khác biệt nào cho doanh nghiệp. \end{example}
+
+\item Miền phụ cốt lõi (Core Subdomain)
+
+Miền phụ cốt lõi là phần quan trọng và có giá trị nhất của hệ thống. Miền phụ cốt lõi giúp phân biệt các doanh nghiệp và làm cho các doanh nghiệp có giá trị. Miền phụ cốt lõi tập trung vào mục tiêu và yêu cầu của khách hàng với doanh nghiệp, từ đó quyết định sự thành công của doanh nghiệp. Vì vậy, mỗi doanh nghiệp luôn tìm cách thực hiện những điều khác biệt trong các miền phụ cốt lõi này để đạt được lợi thế so với đối thủ cạnh tranh.
+
+\begin{example} Trong miền thẻ tín dụng, miền phụ cốt lõi có thể là \emph{"phát hành thẻ"} chịu trách nhiệm về quá trình phát hành thẻ tín dụng cho khách hàng. Miền phụ cốt lõi này bao gồm các nhiệm vụ như: thu thập thông tin khách hàng, thực hiện kiểm tra tín dụng, kích hoạt thẻ, \dots \end{example}
+
+\item Miền phụ hỗ trợ (Supporting Subdomain)
+
+Các miền phụ cốt lõi phụ thuộc vào các miền phụ hỗ trợ. Miền phụ hỗ trợ cung cấp các dịch vụ để miền phụ cốt lõi hoạt động hiệu quả. Tuy nhiên, miền phụ hỗ trợ không đòi hỏi mức độ phức tạp cao về logic nghiệp vụ.
+
+\begin{example} Trong nhiều phần mềm, miền phụ hỗ trợ \emph{"xác thực người dùng"} OAuth 2.0 của Facebook hoặc Google hỗ trợ cho miền phụ cốt lõi hoạt động. \end{example}
+
+\end{itemize}
+
+\subsubsection{Cách xác định miền phụ}
+
+Các miền phụ cốt lõi, hỗ trợ và chung có thể khác nhau đối với các doanh nghiệp vì tùy theo nhu cầu kinh doanh và bối cảnh cụ thể của mỗi tổ chức.
+
+\textbf{Các bước xác định miền phụ:}
+
+\begin{enumerate}
+
+\item Bắt đầu bằng cách xem xét nghiệp vụ kinh doanh.
+
+\item Nếu có sẵn giải pháp đã biết thì có khả năng là miền phụ chung. Ngược lại, chúng ta kiểm tra xem nghiệp vụ kinh doanh đó có thêm giá trị kinh doanh nào hay không?
+
+\item Nếu không có giá trị kinh doanh thì chúng ta kiểm tra xem các miền phụ cốt lõi có phụ thuộc vào miền phụ này hay không? Nếu có thì có khả năng là miền phụ hỗ trợ. Nếu không thì đó là miền phụ chung.
+
+\item Nếu miền phụ có tiềm năng bổ sung một số giá trị kinh doanh thì bước kiểm tra tiếp theo là xem liệu miền doanh nghiệp có độ phức tạp cao hay không?
+
+\item Nếu miền doanh nghiệp không có độ phức tạp cao thì có khả năng là miền phụ hỗ trợ. Ngược lại thì nó có khả năng là miền phụ cốt lõi.
+
+\end{enumerate}
+
+\begin{figure}[H]
+
+\centering
+
+\includegraphics[scale = 0.5]{pictures/_so_do_xac_dinh_mien_phu/main.drawio.png}
+
+\caption{Sơ đồ xác định miền phụ}
+
+\end{figure}
+
+\subsubsection{Áp dụng phân loại miền phụ trong đồ án này}
+
+\begin{itemize}
+
+\item Từ yêu cầu nghiệp vụ, em có thể phân chia thành các miền phụ như sau:
+
+\begin{itemize}
+
+\item Quản lý hóa đơn
+
+\item Báo cáo thống kê
+
+\item Thông báo
+
+\item Thư điện tử
+
+\item Quản lý hệ thống
+
+\end{itemize}
+
+\item Phân loại miền phụ
+
+\begin{itemize}
+
+\item Miền phụ chung
+
+Có thể là các miền có sẵn, hoạt động ổn định, không được đề cập trong nghiệp vụ phần mềm hóa đơn điện tử như:
+
+\begin{itemize}
+
+\item Quản lý nhân sự
+
+\item Quản lý cơ sở vật chất
+
+\end{itemize}
+
+\item Miền phụ cốt lõi
+
+\begin{itemize}
+
+\item Quản lý hóa đơn
+
+Là miền cốt lõi quan trọng tạo lợi thế cạnh tranh trong ngành.
+
+\item Báo cáo thống kê
+
+Giúp theo dõi tình hình thông tin tài chính của doanh nghiệp.
+
+\item Thông báo
+
+Miền thông báo giúp hỗ trợ thông tin các quy định về thuế và pháp luật đến với khách hàng sử dụng.
+
+\item Quản lý hệ thống
+
+Miền này giúp xác thực và ủy quyền bảo vệ dữ liệu của khách hàng.
+
+\end{itemize}
+
+\item Miền phụ hỗ trợ
+
+\item \begin{itemize}
+
+\item Thư điện tử
+
+Miền thư điện tử hỗ trợ miền cốt lõi trao đổi thông tin với khách hàng.
+
+\end{itemize}
+
+\end{itemize}
+
+\end{itemize}
