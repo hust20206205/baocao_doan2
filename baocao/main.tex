@@ -114,7 +114,7 @@
 
 
 % # Chốt không cần xem lại
-% \chapter{Tìm hiểu về thiết kế hướng miền}
+\chapter{Tìm hiểu về thiết kế hướng miền}
 % \input{contents/p3_ddd_tim_hieu_ve_thiet_ke_huong_mien}
 % \section{Đôi nét về thiết kế hướng miền (Domain Driven Design)}
 % \input{contents/p3_ddd_doi_net_ve_thiet_ke_huong_mien_domain_driven_design}
@@ -143,15 +143,15 @@
 
 
 
-\newpage
+% \newpage
 \section{Các mẫu chiến lược trong thiết kế hướng miền}
-\input{contents/p3_ddd_cac_mau_chien_luoc_trong_thiet_ke_huong_mien}
-\subsection{Miền phụ (Sub - Domain)}
-\input{contents/p3_ddd_mien_phu_sub_domain}
-\subsection{Ngôn ngữ chung (Ubiquitous Language)}
-\input{contents/p3_ddd_ngon_ngu_chung_ubiquitous_language}
-\subsection{Tích hợp liên tục (Continuous Integration)}
-\input{contents/p3_ddd_tich_hop_lien_tuc_continuous_integration}
+% \input{contents/p3_ddd_cac_mau_chien_luoc_trong_thiet_ke_huong_mien}
+% \subsection{Miền phụ (Sub - Domain)}
+% \input{contents/p3_ddd_mien_phu_sub_domain}
+% \subsection{Ngôn ngữ chung (Ubiquitous Language)}
+% \input{contents/p3_ddd_ngon_ngu_chung_ubiquitous_language}
+% \subsection{Tích hợp liên tục (Continuous Integration)}
+% \input{contents/p3_ddd_tich_hop_lien_tuc_continuous_integration}
 
 
 
@@ -161,8 +161,8 @@
 
 
 
-\subsection{Bối cảnh bị giới hạn (Bounded Context)}
-\input{contents/p3_ddd_boi_canh_bi_gioi_han_bounded_context}
+% \subsection{Bối cảnh bị giới hạn (Bounded Context)}
+% \input{contents/p3_ddd_boi_canh_bi_gioi_han_bounded_context}
 
 
 
@@ -188,44 +188,31 @@
 
 
 \subsection{Mối quan hệ bối cảnh bị giới hạn (Bounded Context Relationships)}
-% \input{contents/_a.tex}
+\input{contents/_a.tex}
+
+
+
 \subsection{Bản đồ bối cảnh (Context Maps)}
 % \input{contents/_a.tex}
-\end{document}
+
+
+
+
 
 % \section{Bản đồ bối cảnh (Context Maps)}
 
 Các bối cảnh bị giới hạn phải độc lập trong bối cảnh riêng và có mô hình miền riêng, nhưng các bối cảnh bị giới hạn cần tương tác, giao tiếp để trao đổi thông tin. Vì vậy các bối cảnh bị giới hạn có thể có mối quan hệ với nhau. Những mối quan hệ này cần được quản lý chặt chẽ để hoạt động độc lập, nhất quán và linh hoạt. Do đó, cần phải ghi lại các mối quan hệ thông qua việc sử dụng bản đồ bối cảnh. \emph{Bản đồ bối cảnh (Context Maps)} là sự thể hiện trực quan của hệ thống, thể hiện các thành phần và mối quan hệ giữa các thành phần.
 
 \begin{figure}[H]
-
+    
     \centering
-
+    
     \includegraphics[scale = 0.4]{pictures/ban_do_boi_canh/main.drawio.png}
-
+    
     \caption{Ví dụ bản đồ bối cảnh trong 1 ngân hàng}
-
-\end{figure}
-
-%! Vẽ lại tiếng Việt
-
-%! Vẽ lại tiếng Việt
-
-%! Vẽ lại tiếng Việt
-
-%! Vẽ lại tiếng Việt
-
-%! Vẽ lại tiếng Việt
-
-%! Vẽ lại tiếng Việt
-
-%! Vẽ lại tiếng Việt
-
-%! Vẽ lại tiếng Việt
-
-%! Vẽ lại tiếng Việt
-
-%! Vẽ lại tiếng Việt
+    
+\end{figure} 
+\end{document}
 
 % \section{Các mối quan hệ bối cảnh bị giới hạn}
 
