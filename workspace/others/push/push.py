@@ -36,3 +36,4 @@ MyView.CloseTerminal()
 MyView.CloseScrollBar()
 # MyView.CollapseFolders()
 # MyView.OpenLatex()
+
