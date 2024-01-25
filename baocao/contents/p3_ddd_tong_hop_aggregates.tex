@@ -1,0 +1,26 @@
+Việc quản lý vòng đời các đối tượng trong miền không hề đơn giản, nếu như làm không đúng sẽ có thể gây ảnh hưởng đến việc mô hình hóa miền.       Tổng hợp  (Aggregates)         là một nhóm các thực thể và đối tượng giá trị được xem như một tổng thể thống nhất từ góc độ dữ liệu và khái niệm miền.     Tổng hợp  phải cung cấp các giao diện để vận hành trên các đối tượng bên trong.    Tổng hợp   xác định một ranh giới nhất quán, có nghĩa là tất cả các thay đổi đối với các đối tượng trong tập hợp phải được thực hiện theo cách duy trì tính nhất quán và tính toàn vẹn của các đối tượng.
+
+
+\begin{example}   Trong miền thương mại điện tử, tổng hợp có thể là một đơn hàng, bao gồm đối tượng tiêu đề đơn hàng và một hoặc nhiều đối tượng chi tiết đơn hàng. Đối tượng tiêu đề đơn hàng sẽ là gốc của tổng hợp và nó sẽ chịu trách nhiệm duy trì tính nhất quán của đơn hàng, chẳng hạn như đảm bảo rằng tổng đơn hàng là chính xác và đơn hàng ở trạng thái hợp lệ.
+    
+\end{example}
+
+
+% Một tập hợp bao gồm một nhóm tổng hợp còn được gọi là thực thể gốc.
+% Thực thể gốc này có một danh tính duy nhất từ bối cảnh miền.
+% Phần thứ hai của tập hợp là cụm, được hình thành bởi ranh giới của tập hợp.
+% Trong ranh giới này, có thể không có hoặc nhiều thực thể tổng hợp và đối tượng giá trị. Các đối tượng trong cụm này hoặc đối tượng trong ranh giới được gọi là đối tượng bên trong hoặc đối tượng con.
+
+% đảm bảo rằng tất cả hành vi cần thiết để vận hành trên đối tượng bên trong được hiển thị dưới dạng các hàm của đối tượng gốc tổng hợp.
+
+
+
+
+
+
+% Trong DDD, các tập hợp được sử dụng để mô hình hóa các ranh giới nhất quán trong miền và để đảm bảo rằng trạng thái của miền luôn nhất quán. Chúng cũng được sử dụng để kiểm soát quyền truy cập vào các đối tượng con và cung cấp cách thực hiện các hoạt động liên quan đến nhiều đối tượng trong tổng thể.
+
+% Khi thiết kế một tập hợp, điều quan trọng là phải xác định ranh giới nhất quán, chọn đối tượng gốc thích hợp và đảm bảo rằng tập hợp đó nhỏ và nhất quán.
+
+% Tổng hợp được lưu trữ theo trạng thái và có nguồn gốc từ sự kiện
+% Các tập hợp có thể được mô hình hóa theo hai cách, bằng cách lưu trữ trạng thái hiện tại của chúng hoặc bằng cách xây dựng trạng thái từ các sự kiện miền trong quá khứ. Các tập hợp tổng hợp được lưu trữ trạng thái và các tập hợp tổng hợp có nguồn gốc sự kiện đều là những cách để mô hình hóa các đối tượng miền trong ngữ cảnh thiết kế hướng miền (DDD).  
