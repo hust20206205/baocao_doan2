@@ -1,10 +1,6 @@
 
 
 
-Repository độc lập miền và lưu trữ sql (dễ thuận tiện Unit testing and Mocking)
-
-Repository trong ORM
-
 <!--https: //images.viblo.asia/fd4b10a0-f1b1-4ed1-9bd1-578c871820ae.png-->
 
 , gprc rabitmq đồng bộ hay k, ít hay nhiều như pub sub
