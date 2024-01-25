@@ -91,8 +91,7 @@ Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nh
 
 
 
-% Trong mối quan hệ bất đối xứng, một bối cảnh bị giới hạn có sự phụ thuộc vào một bối cảnh bị giới hạn khác. Mối quan hệ này được mô tả bằng cách gán vai trò cho bối cảnh bị giới hạn:
- 
+Trong mối quan hệ bất đối xứng, một bối cảnh bị giới hạn có sự phụ thuộc vào một bối cảnh bị giới hạn khác. Mối quan hệ này được mô tả bằng cách gán vai trò cho bối cảnh bị giới hạn:
 
 
 
@@ -103,61 +102,54 @@ Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nh
 
 
 
-% \begin{itemize}
 
-% \item \textbf{Bối cảnh bị giới hạn thượng nguồn (Upstream):}
+\begin{itemize}
 
-% \begin{itemize}
+    \item \textbf{Bối cảnh bị giới hạn thượng nguồn (Upstream):}
 
-% \item Bối cảnh bị giới hạn cung cấp cho bối cảnh bị giới hạn khác.
+          \begin{itemize}
 
-% \item Ký hiệu: U
+              \item Bối cảnh bị giới hạn cung cấp cho bối cảnh bị giới hạn khác.  Ký hiệu: U
 
-% \end{itemize}
+          \end{itemize}
 
-% \item \textbf{Bối cảnh bị giới hạn hạ lưu (Downstream):}
+    \item \textbf{Bối cảnh bị giới hạn hạ lưu (Downstream):}
 
-% \begin{itemize}
+          \begin{itemize}
 
-% \item Bối cảnh bị giới hạn phụ thuộc vào bối cảnh bị giới hạn khác.
+              \item Bối cảnh bị giới hạn phụ thuộc vào bối cảnh bị giới hạn khác.  Ký hiệu: D
 
-% \item Ký hiệu: D
+          \end{itemize}
 
-% \end{itemize}
+\end{itemize}
 
-% \end{itemize}
+\begin{example} Mối quan hệ bất đối xứng giữa bối cảnh bị giới hạn A và bối cảnh bị giới hạn B.
 
-% \begin{example} Mối quan hệ bất đối xứng giữa bối cảnh bị giới hạn A và bối cảnh bị giới hạn B.
+    \begin{itemize}
 
-% \begin{itemize}
+        \item Bối cảnh bị giới hạn A ràng buộc với bối cảnh bị giới hạn B
 
-% \item Bối cảnh bị giới hạn A ràng buộc với bối cảnh bị giới hạn B
+        \item Bối cảnh bị giới hạn A đóng vai trò là bối cảnh bị giới hạn hạ lưu (Downstream)
 
-% \item Bối cảnh bị giới hạn A đóng vai trò là bối cảnh bị giới hạn hạ lưu (Downstream)
+        \item Bối cảnh bị giới hạn B đóng vai trò là bối cảnh bị giới hạn thượng nguồn (Upstream)
 
-% \item Bối cảnh bị giới hạn B đóng vai trò là bối cảnh bị giới hạn thượng nguồn (Upstream)
+        \item Bối cảnh bị giới hạn A có kiến thức về các mô hình trong bối cảnh bị giới hạn B
 
-% \item Bối cảnh bị giới hạn A có kiến thức về các mô hình trong bối cảnh bị giới hạn B
+        \item Bối cảnh bị giới hạn B không có bất kỳ kiến thức nào về mô hình trong bối cảnh bị giới hạn A
 
-% \item Bối cảnh bị giới hạn B không có bất kỳ kiến thức nào về mô hình trong bối cảnh bị giới hạn A
+    \end{itemize}
 
-% \end{itemize}
+    \begin{figure}[H]
 
-% \begin{figure}[H]
+        \centering
 
-% \centering
+        \includegraphics[scale = 0.5]{pictures/moi_quan_he_bat_doi_xung/main.drawio.png}
 
-% \includegraphics[scale = 0.5]{pictures/moi_quan_he_bat_doi_xung/main.drawio.png}
+        \caption{Ví dụ mối quan hệ bất đối xứng}
 
-% \caption{Ví dụ mối quan hệ bất đối xứng}
+    \end{figure}
 
-% \end{figure}
-
-% \end{example}
-
-
-
-
+\end{example}
 
 
 
@@ -174,7 +166,11 @@ Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nh
 
 
 
-% % \xxxxxxxxxxxxxxxxxxxxx{Mô hình khách hàng - nhà cung cấp (Customer - Supplier)}
+
+
+
+
+\paragraph{Mô hình khách hàng - nhà cung cấp (Customer - Supplier)}
 
 % Mô hình khách hàng - nhà cung cấp (Customer - Supplier) được thể hiện rằng bối cảnh bị giới hạn thượng nguồn đáp ứng nhu cầu của bối cảnh bị giới hạn hạ lưu.
 
@@ -190,7 +186,7 @@ Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nh
 
 % Trong thực tế, nhóm phát triển nhà cung cấp luôn tham khảo ý kiến của nhóm phát triển khách hàng và có bộ kiểm thử để đảm bảo rằng dịch vụ của nhà cung cấp đáp ứng được yêu cầu của khách hàng.
 
-% % \xxxxxxxxxxxxxxxxxxxxx{Mô hình tuân thủ (Conformist)}
+\paragraph{Mô hình tuân thủ (Conformist)}
 
 % Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp thực hiện tốt yêu cầu thì khách hàng cần tuân thủ chặt chẽ. Mô hình tuân thủ (Conformist) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu áp dụng mô hình, ngôn ngữ chung và các khái niệm của bối cảnh bị giới hạn thượng nguồn.
 
@@ -252,7 +248,7 @@ Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nh
 
 % \end{example}
 
-% % \xxxxxxxxxxxxxxxxxxxxx{Mô hình chống đổ vỡ (Anti Corruption Layer)}
+\paragraph{Mô hình chống đổ vỡ (Anti Corruption Layer)}
 
 % Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp có thể thay đổi linh hoạt không đảm bảo đáp ứng nhu cầu của khách hàng thì khách hàng cần có giải pháp xử lí. Mô hình chống đổ vỡ (Anti Corruption Layer) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu sử dụng một lớp để dịch giữa ngôn ngữ của nó và ngôn ngữ của bối cảnh bị giới hạn thượng nguồn.
 
@@ -316,7 +312,7 @@ Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nh
 
 \subsubsection{Mối quan hệ 1 - nhiều (One to Many Relationship)}
 
-% % \xxxxxxxxxxxxxxxxxxxxx{Dịch vụ máy chủ mở (Open Host Service)}
+\paragraph{Dịch vụ máy chủ mở (Open Host Service)}
 
 % Dịch vụ máy chủ mở (Open Host Service) là nhà cung cấp trong mô hình khách hàng - nhà cung cấp, dịch vụ máy chủ mở hiển thị một API công khai cho các bối cảnh bị giới hạn khác sử dụng chức năng của nhà cung cấp.
 
@@ -372,7 +368,7 @@ Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nh
 
 % \end{example}
 
-% % \xxxxxxxxxxxxxxxxxxxxx{Ngôn ngữ được xuất bản (Published Language)}
+\paragraph{Ngôn ngữ được xuất bản (Published Language)}
 
 % Khi ngôn ngữ chung ở dịch vụ máy chủ mở được các nhóm phát triển trong bối cảnh bị giới hạn hạ lưu chấp nhận. Ngôn ngữ chung này được gọi là ngôn ngữ được xuất bản (Published Language). Ngôn ngữ được xuất bản có lợi ích là tính thống nhất trong hệ thống tuy nhiên cần phân tích kĩ vì nó có thể tạo ra sự nhầm lẫn trong bối cảnh bị giới hạn hạ lưu nào đó.
 
