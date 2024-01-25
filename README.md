@@ -1,9 +1,4 @@
 
-\subsection{Đối tượng thực thể (Entities Objects)}
-\input{contents/_a.tex}
-% Đối tượng miền hoặc đối tượng giá trị, là đối tượng đại diện cho một đặc điểm của miền mà không có nhận dạng riêng.
-
-
 
 
 
