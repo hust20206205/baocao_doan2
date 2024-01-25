@@ -1,9 +1,8 @@
 Đối tượng giá trị (Value Objects) là đối tượng đại diện cho một đặc điểm của miền mà không có nhận dạng riêng.
 
-
 Đối tượng giá trị được tạo trong bộ nhớ tiến trình và sau đó bị hủy sau khi nó đã phục vụ mục đích của nó.
 
-Một điểm khác biệt quan trọng giữa   thực thể và đối tượng giá trị là đối tượng giá trị không tồn tại lâu dài trong CSDL.
+Một điểm khác biệt quan trọng giữa thực thể và đối tượng giá trị là đối tượng giá trị không tồn tại lâu dài trong CSDL.
 
 %! VD
 
@@ -13,8 +12,7 @@ Một điểm khác biệt quan trọng giữa   thực thể và đối tượn
 
 %! tạo một đối tượng giá trị để xác thực địa chỉ email.
 
-%! Kết quả là, thực thể khách hàng sẽ sạch hơn và đơn giản hơn nhiều trong việc thực hiện. 
-
+%! Kết quả là, thực thể khách hàng sẽ sạch hơn và đơn giản hơn nhiều trong việc thực hiện.
 
 % Các đối tượng giá trị cũng được so sánh dựa trên thuộc tính của chúng chứ không phải danh tính của chúng, điều này cho phép so sánh linh hoạt và trực quan hơn.
 
@@ -23,7 +21,9 @@ Trong triển khai phần mềm, các đối tượng giá trị thường đư�
 Một ví dụ
 
 Giả sử chúng ta đang xây dựng một trang web thương mại điện tử và chúng ta có yêu cầu thể hiện giá trong mô hình miền. Giá là một ứng cử viên phù hợp cho đối tượng giá trị vì nó có thể được biểu diễn dưới dạng kết hợp các thuộc tính (ví dụ: tiền tệ và số lượng) và không có đặc điểm nhận dạng duy nhất của riêng nó.
-%    
+
+%
+
 Trong ví dụ này, đối tượng giá trị Price có hai thuộc tính: currency và amount. Thuộc tính currency đại diện cho đơn vị tiền tệ của giá (ví dụ: USD, EUR, v.v.), trong khi thuộc tính amount đại diện cho giá trị bằng số của giá. Đối tượng Price là bất biến và trạng thái của nó không thể thay đổi sau khi được tạo. Đối tượng Price cũng xác định các phương thức để truy xuất các thuộc tính của nó (ví dụ: getCurrency() và getAmount()), cũng như các phương thức khác dành riêng cho < khái niệm /span>). hoặc Price (ví dụ: phương thức add()subtract()
 
 Bằng cách sử dụng đối tượng giá trị Price, chúng tôi có thể đảm bảo rằng giá được thể hiện nhất quán trong toàn bộ mô hình miền và chúng tôi có thể thực hiện các so sánh và tính toán linh hoạt và trực quan hơn về giá.
@@ -37,4 +37,3 @@ Trong một ngữ cảnh, một đối tượng có thể được coi là một
 Ví dụ: hãy xem xét một đối tượng Person trong miền nhân sự. Trong một ngữ cảnh, đối tượng Person có thể được coi là một đối tượng giá trị vì nó được xác định bởi các thuộc tính của nó, chẳng hạn như tên, ngày sinh và số an sinh xã hội. Tuy nhiên, trong một ngữ cảnh khác hoặc một giải pháp khác, đối tượng Person có thể được coi là một thực thể vì nó có một danh tính duy nhất và có thể được duy trì trong CSDL hoặc được sử dụng trên các ngữ cảnh giới hạn khác nhau.
 
 Cuối cùng, việc lựa chọn mô hình hóa một đối tượng là đối tượng giá trị hay thực thể phụ thuộc vào nhu cầu của mô hình miền và các yêu cầu cụ thể của giải pháp phần mềm đang được phát triển. Điều quan trọng là chọn các khái niệm mô hình phù hợp để thể hiện chính xác miền và cung cấp giải pháp phần mềm linh hoạt và có thể bảo trì.
- 
