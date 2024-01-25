@@ -1,18 +1,23 @@
-Đối tượng giá trị (Value Objects) là đối tượng đại diện cho một đặc điểm của miền mà không có nhận dạng riêng.       Một điểm khác biệt quan trọng giữa thực thể và đối tượng giá trị là đối tượng giá trị không tồn tại lâu dài trong CSDL.    Đối tượng giá trị được tạo trong bộ nhớ tiến trình và sau đó bị hủy sau khi nó đã phục vụ mục đích của nó.   Các đối tượng giá trị   được so sánh dựa trên thuộc tính       không phải danh tính của chúng, điều này cho phép so sánh linh hoạt và trực quan hơn.
+Đối tượng giá trị (Value Objects) là đối tượng đại diện cho một đặc điểm của miền mà không có nhận dạng riêng. Một điểm khác biệt quan trọng giữa thực thể và đối tượng giá trị là đối tượng giá trị không tồn tại lâu dài trong CSDL. Đối tượng giá trị được tạo trong bộ nhớ tiến trình và sau đó bị hủy sau khi nó đã phục vụ mục đích của nó. Các đối tượng giá trị được so sánh dựa trên thuộc tính không phải danh tính của chúng, điều này cho phép so sánh linh hoạt và trực quan hơn.
 
+Đối tượng giá trị trong một bối cảnh bị giới hạn này có thể trở thành một thực thể trong bối cảnh bị giới hạn khác. Sự khác biệt giữa các đối tượng giá trị và các thực thể phụ thuộc vào ngữ cảnh và dựa trên nhu cầu của mô hình miền. Vì vậy, việc lựa chọn mô hình hóa một đối tượng là đối tượng giá trị hay thực thể phụ thuộc vào nhu cầu của mô hình miền và các yêu cầu cụ thể của giải pháp phần mềm đang được phát triển. Điều quan trọng là chọn các khái niệm mô hình phù hợp để thể hiện chính xác miền và cung cấp giải pháp phần mềm linh hoạt và có thể bảo trì.
 
-Đối tượng giá trị trong một bối cảnh bị giới hạn này    có thể trở thành một thực thể trong bối cảnh bị giới hạn khác. Sự khác biệt giữa các đối tượng giá trị và các thực thể phụ thuộc vào ngữ cảnh và dựa trên nhu cầu của mô hình miền.  Vì vậy,  việc lựa chọn mô hình hóa một đối tượng là đối tượng giá trị hay thực thể phụ thuộc vào nhu cầu của mô hình miền và các yêu cầu cụ thể của giải pháp phần mềm đang được phát triển. Điều quan trọng là chọn các khái niệm mô hình phù hợp để thể hiện chính xác miền và cung cấp giải pháp phần mềm linh hoạt và có thể bảo trì.
+\begin{example} Giá tiền là đối tượng giá trị vì nó có thể được biểu diễn dưới dạng các thuộc tính. \end{example}
 
+% #
 
+% #
 
-\begin{example}      Giá tiền là     đối tượng giá trị         vì nó có thể được biểu diễn dưới dạng   các thuộc tính.    \end{example}
 % #
+
 % #
+
 % #
+
 % #
+
 % #
-% #
-% #
+
 %! VD
 
 %! chúng ta sẽ đặt logic xác thực cho địa chỉ email ở đâu?
@@ -23,12 +28,9 @@
 
 %! Kết quả là, thực thể khách hàng sẽ sạch hơn và đơn giản hơn nhiều trong việc thực hiện.
 
-
-
 % Một ví dụ
+
 % Giả sử chúng ta đang xây dựng một trang web thương mại điện tử và chúng ta có yêu cầu thể hiện giá trong mô hình miền. Giá là một ứng cử viên phù hợp cho đối tượng giá trị vì nó có thể được biểu diễn dưới dạng kết hợp các thuộc tính (ví dụ: tiền tệ và số lượng) và không có đặc điểm nhận dạng duy nhất của riêng nó.
-
-
 
 % % Đối tượng giá trị so với thực thể
 
