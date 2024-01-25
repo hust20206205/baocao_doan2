@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <!-- Layered Architecture : https://ddd-practitioners.com/layered-architecture -->
 
 <!-- [[Layered Architecture]] A technique for separating the concerns of a software system, isolating a domain layer, among other things. -->
