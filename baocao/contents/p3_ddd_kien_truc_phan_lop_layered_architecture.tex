@@ -1,29 +1,37 @@
 % <!-- Infrastructure Service : https://ddd-practitioners.com/infrastructure-service -->
+
 % <!-- Application Service : https://ddd-practitioners.com/application-service -->
-% <!--  : https://ddd-practitioners.com/layered-architecture -->
+
+% <!-- : https://ddd-practitioners.com/layered-architecture -->
+
 % <!-- Module : https://ddd-practitioners.com/?page_id=618 -->
 
+Khi phát triển ứng dụng phần mềm, một phần lớn thành phần không liên quan trực tiếp đến nghiệp vụ, nhưng chúng là một phần của hạ tầng. Ví dụ như truy cập CSDL, hạ tầng mạng, \dots Trong một ứng dụng hướng đối tượng thuần túy, các đoạn mã lại được nhúng vào trong các hành vi của các đối tượng nghiệp vụ vì nó là cách dễ và nhanh chóng. Tuy nhiên, việc trộn lẫn các đoạn mã liên quan đến nghiệp vụ có thể làm cho việc sửa đổi khó khăn, kém linh hoạt.
 
-Khi phát triển ứng dụng phần mềm, một phần lớn thành phần không liên quan trực tiếp đến nghiệp vụ, nhưng chúng là một phần của hạ tầng. Ví dụ như truy cập CSDL, hạ tầng mạng,\dots Trong một ứng dụng hướng đối tượng thuần túy, các đoạn mã lại được nhúng vào trong các hành vi của các đối tượng nghiệp vụ vì nó là cách dễ và nhanh chóng. Tuy nhiên, việc trộn lẫn các đoạn mã liên quan đến nghiệp vụ có thể làm cho việc sửa đổi  khó khăn, kém linh hoạt. 
-
-Kiến trúc phân    lớp là một mẫu thiết kế phần mềm phân chia các mối quan tâm khác nhau của hệ thống phần mềm thành các lớp hoặc thành phần khác nhau, trong đó mỗi lớp cung cấp một tập hợp dịch vụ cụ thể cho lớp phía trên nó. Sự tách biệt các mối quan tâm này giúp duy trì tính module và khả năng mở rộng của hệ thống, cũng như giảm độ phức tạp của thiết kế tổng thể.
-
-
+Kiến trúc phân lớp là một mẫu thiết kế phần mềm phân chia các mối quan tâm khác nhau của hệ thống phần mềm thành các lớp hoặc thành phần khác nhau, trong đó mỗi lớp cung cấp một tập hợp dịch vụ cụ thể cho lớp phía trên nó. Sự tách biệt các mối quan tâm này giúp duy trì tính module và khả năng mở rộng của hệ thống, cũng như giảm độ phức tạp của thiết kế tổng thể.
 
 Theo thiết kế hướng miền có 4 lớp:
+
 \begin{itemize}
-    \item Lớp giao diện người dùng (User Interface)
-    Chịu trách nhiệm trình bày thông tin tới người   dùng và  tương tác với  người dùng.
-    \item Lớp ứng dụng (Application Layer)
-    Sử dụng  miền  dịch vụ   để  thực hiện chức năng của miền.
-    \item Lớp miền (Domain Layer)
-    Là lớp quan trọng trong  thiết kế hướng   miền,  lớp miền chứa các đối tượng nghiệp vụ và các quy tắc nghiệp vụ kinh doanh.  Nó bao gồm các thành phần như thực thể, đối tượng giá trị và dịch vụ miền.
-    \item Lớp hạ tầng (Infrastructure Layer)
-    Lớp này chịu trách nhiệm lưu trữ và truy xuất dữ liệu từ cơ sở dữ liệu, truyền thông điệp qua hàng đợi tin nhắn, \dots
+
+\item Lớp giao diện người dùng (User Interface)
+
+Chịu trách nhiệm trình bày thông tin tới người dùng và tương tác với người dùng.
+
+\item Lớp ứng dụng (Application Layer)
+
+Sử dụng miền dịch vụ để thực hiện chức năng của miền.
+
+\item Lớp miền (Domain Layer)
+
+Là lớp quan trọng trong thiết kế hướng miền, lớp miền chứa các đối tượng nghiệp vụ và các quy tắc nghiệp vụ kinh doanh. Nó bao gồm các thành phần như thực thể, đối tượng giá trị và dịch vụ miền.
+
+\item Lớp hạ tầng (Infrastructure Layer)
+
+Lớp này chịu trách nhiệm lưu trữ và truy xuất dữ liệu từ cơ sở dữ liệu, truyền thông điệp qua hàng đợi tin nhắn, \dots
+
 \end{itemize}
 
+\begin{example} Để duy trì tính module cần sử dụng Dependency Injection và Dependency Inversion để tạo ra các thành phần có thể tái sử dụng và dễ dàng thay đổi các thành phần phụ thuộc.
 
-
-\begin{example} Để duy trì tính module   cần sử dụng Dependency Injection và Dependency   Inversion  để   tạo   ra   các   thành   phần   có   thể   tái   sử   dụng   và   dễ   dàng   thay   đổi   các   thành   phần   phụ thuộc.
-    
 \end{example}
