@@ -43,3 +43,16 @@ Lớp này chứa thông tin về các lĩnh vực. Đây là trái tim của ng
 <!--Lớp hạ tầng (Infrastructure Layer)-->
 
 Lớp này đóng vai trò như một thư viện hỗ trợ cho tất cả các lớp còn lại. Nó cung cấp thông tin liên lạc giữa các lớp, cài đặt persistence cho đối tượng nghiệp vụ, đồng thời chứa các thư viện hỗ trợ cho Lớp giao diện người dùng, ...
+
+
+
+
+
+<!--Các dịch vụ được sử dụng để mô hình hóa sự tương tác của các đối tượng miền với các đối tượng miền khác, với cơ sở hạ tầng và với các thành phần bên ngoài khác.-->
+
+
+<!---->
+
+<!---->
+
+<!---->
