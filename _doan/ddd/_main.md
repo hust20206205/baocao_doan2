@@ -1,64 +1,9 @@
-# 5. Service Mesh, CICD, microfe, API gateway, cache redis, log xử lí lỗi,
+Service Mesh
+CICD
+API gateway
 
-<!---->
 
-Bảng CSDL này được em thu thập dữ liệu từ trang web CƠ SỞ DỮU DANH MỤC DÙNG CHUNG (https: //dmdc.mof.gov.vn/khai-thac-pb/co-quan-thue)
-
-https: //helpsme.misa.vn/2020/kb/quan-ly-hoa-don-dien-tu/
-
-https: //helpsme.misa.vn/2022/kb/quy-trinh-nghiep-vu-hddt-theo-nghi-dinh-123-2020-nd-cp/
-
-https: //www.meinvoice.vn/tin-tuc/3442/nhung-nghiep-vu-co-ban-cua-hoa-don-dien-tu-xac-thuc/
-
-<!---->
-
-Bảng CSDL này được em thu thập dữ liệu từ trang web CƠ SỞ DỮU DANH MỤC DÙNG CHUNG (https: //dmdc.mof.gov.vn/khai-thac-pb/co-quan-thue)
-
-https: //helpsme.misa.vn/2020/kb/quan-ly-hoa-don-dien-tu/
-
-https: //helpsme.misa.vn/2022/kb/quy-trinh-nghiep-vu-hddt-theo-nghi-dinh-123-2020-nd-cp/
-
-https: //www.meinvoice.vn/tin-tuc/3442/nhung-nghiep-vu-co-ban-cua-hoa-don-dien-tu-xac-thuc/
-
-<!--Thay thế = NULL-->
-
-<!--Bị thay thế = NULL-->
-
-<!--quy trình tương tự như lập mới hóa đơn giá trị gia tăng.-->
-
-<!---->
-
-<!--@Chú ý ở đồ án này:-->
-
-<!--Sử dụng hàm ngẫu nhiên (tỉ lệ 10%) cho trường hợp "Mã số thuế không tồn tại."-->
-
-<!--Sử dụng hàm ngẫu nhiên tạo tên cho Tên NNT vì em không có thông tin đăng ký thực tế của NNT.-->
-
-<!--Sử dụng hàm ngẫu nhiên trong bảng CSDL cho "Mã cơ quan thuế quản lý" và "Tên cơ quan thuế quản lý"-->
-
-Bảng CSDL này được em thu thập dữ liệu từ trang web CƠ SỞ DỮU DANH MỤC DÙNG CHUNG (https: //dmdc.mof.gov.vn/khai-thac-pb/co-quan-thue)
-
-<!--!Mã thuế số-chi nhánh-->
-
-<!--Mã captcha không đúng.-->
-
-<!--0107001729-->
-
-dấu chấm cuối câu .
-
-email=>Thư điện tử
-
-Viết tắt NNT...
-
-<!--Validtae-->
-
-Điều kiện
-
-<!---->
-
-Chỉ dùng 1 loại hóa đơn vì em thấy tương tự.
-
-Loại hóa đơn: + Hóa đơn giá trị gia tăng + Hóa đơn bán hàng + Hóa đơn bán tài sản công + Hóa đơn bán hàng dự trữ quốc gia + Hóa đơn khác + Chứng từ điện tử được sử dụng và quản lý như hóa đơn
+<!---->   
 
 <!--Nghiệp vụ của bài toán chính-->
 
