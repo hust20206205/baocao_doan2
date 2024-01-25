@@ -197,7 +197,7 @@ Các hoạt động CSDL trên tổng hợp phải là nguyên tử, đối tư�
 Có một số mối quan tâm chung liên quan đến các đối tượng kho lưu trữ, nhưng những mối quan tâm chung này liên quan đến chức năng truy vấn có thể được giải quyết bằng cách hiển thị các hàm truy vấn cấp cao trong đối tượng kho lưu trữ bằng cách sử dụng các giải pháp bộ nhớ đệm như Radice và Memcache cũng như bằng cách tạo và hiển thị các hàm truy vấn bên ngoài của đối tượng kho lưu trữ.
 
 <!--hướng dẫn 7/11-->
-
+ 
 
 
 
@@ -368,6 +368,32 @@ Các dịch vụ cơ sở hạ tầng cung cấp các tài nguyên bên ngoài t
 <!--Hướng dẫn 7/15-->
 
 <!--Hướng dẫn 7/16-->
+
+<!--@ Xong DDD -->
+
+<!--@ Xong DDD -->
+
+<!--@ Xong DDD -->
+
+<!--@ Xong DDD -->
+
+<!--@ Xong DDD --> 
+
+<!--@ Xong DDD -->
+
+<!--@ Xong DDD -->
+
+<!--@ Xong DDD -->
+
+<!--@ Xong DDD -->
+
+<!--@ Xong DDD -->
+
+<!--@ Xong DDD -->
+
+<!--@ Xong DDD -->
+
+<!--@ Xong DDD -->
 
 <!--@ Xong DDD -->
 
