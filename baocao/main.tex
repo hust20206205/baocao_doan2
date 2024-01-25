@@ -102,20 +102,7 @@
 
 
 
-\subsection{Tổng hợp  (Value Objects)}
-
-
-
-% % %! Aggregates/ /
-
-% % Tổng hợp là đối tượng kinh doanh trung tâm trong Bối cảnh bị giới hạn của chúng ta và xác định phạm vi nhất quán trong bối cảnh bị giới hạn đó.
-
-% % Tổng hợp = Mã định danh chính của Bối cảnh bị giới hạn của chúng ta
-
-
-
-
-
+\subsection{Tổng hợp  (Aggregates)}
 
 
 
@@ -190,97 +177,16 @@ command
 
 % Bảng CSDL này được em thu thập dữ liệu từ trang web CƠ SỞ DỮU DANH MỤC DÙNG CHUNG (https: //dmdc.mof.gov.vn/khai-thac-pb/co-quan-thue)
 
-% <!--!Mã thuế số-chi nhánh-->
-
-% <!--Mã captcha không đúng.-->
-
-% <!--0107001729-->
-
-% dấu chấm cuối câu .
-
-% email=>Thư điện tử
-
-% Viết tắt NNT...
-
-% <!--Validtae-->
-
-% Điều kiện
-
-% <!---->
-
 % Chỉ dùng 1 loại hóa đơn vì em thấy tương tự.
 
 % Loại hóa đơn: + Hóa đơn giá trị gia tăng + Hóa đơn bán hàng + Hóa đơn bán tài sản công + Hóa đơn bán hàng dự trữ quốc gia + Hóa đơn khác + Chứng từ điện tử được sử dụng và quản lý như hóa đơn
 
-% <!---->
-
 % <!--Các công nghệ phổ biến trong kiến trúc vi dịch vụ-->
-
 % <!--RxJS-->
-
 % https: //www.youtube.com/watch? v=6jSk_J7RA24
-
 % https: //www.youtube.com/watch? v=Jc-lGeDuphg
-
 % https: //www.youtube.com/watch? v=UXHzxX4png0
-
 % https: //www.youtube.com/watch? v=glZs4QFfwbc
-
-% # 6. Container và Container Orchestration
-
-% Docker and Kubernetes (often abbreviated as K8s) are two powerful technologies commonly used in the world of container orchestration and deployment. Let's briefly explore each of them:
-
-% 1. **Docker: **
-
-% - **Containerization Technology: ** Docker is a platform that enables developers to automate the deployment of applications inside lightweight, portable containers. Containers encapsulate an application and its dependencies, ensuring consistency across different environments.
-
-% - **Docker Image: ** A Docker image is a lightweight, standalone, executable package that includes everything needed to run a piece of software, including the code, runtime, libraries, and system tools.
-
-% - **Docker Container: ** An instance of a Docker image is called a Docker container. Containers run consistently across different environments, providing a consistent and reproducible runtime.
-
-% 2. **Kubernetes (K8s): **
-
-% - **Container Orchestration: ** Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It abstracts the underlying infrastructure and provides a unified API to manage clusters of containers.
-
-% - **Key Concepts: ** Kubernetes introduces concepts like Pods (smallest deployable units), Deployments (managing replica sets and rolling updates), Services (networking abstraction for pods), and more.
-
-% - **Scaling and Load Balancing: ** Kubernetes can scale applications horizontally by adding or removing instances (pods) based on demand. It also provides load balancing to distribute traffic across multiple instances.
-
-% **How Docker and Kubernetes Work Together: **
-
-% - Docker is used to create containerized applications, and Kubernetes manages the orchestration of these containers.
-
-% - Developers package their applications into Docker containers, which can run locally on a developer's machine.
-
-% - Kubernetes then takes these containers and orchestrates their deployment, ensuring high availability, scalability, and easy management.
-
-% **Common Commands: **
-
-% - **Docker Commands: **
-
-% - `docker build`: Build a Docker image from a Dockerfile.
-
-% - `docker run`: Create and start a Docker container.
-
-% - `docker push`: Push a Docker image to a registry.
-
-% - **Kubernetes Commands: **
-
-% - `kubectl apply`: Apply configurations to a cluster.
-
-% - `kubectl get`: Display information about resources.
-
-% - `kubectl describe`: Show detailed information about a resource.
-
-% - `kubectl scale`: Scale the number of replicas in a deployment.
-
-% **Integration: **
-
-% - Docker images are often stored in container registries like Docker Hub.
-
-% - Kubernetes can pull these Docker images from a registry and deploy them onto the cluster.
-
-% In summary, Docker is used to containerize applications, and Kubernetes is used to orchestrate and manage these containers in a production environment. Together, they provide a powerful and scalable solution for deploying and managing containerized applications.
 
 % # 7. Broker Pattern dịch vụ dicovery
 
@@ -294,27 +200,7 @@ command
 
 % thiết kế hướng miền giúp xây dựng mô hình chính xác và nhất quán của lĩnh vực kinh doanh, giúp đảm bảo rằng hệ thống phản ánh đúng yêu cầu nghiệp vụ.
 
-% <!--@============================================== -->
-
-% <!--@============================================== -->
-
-% <!--@============================================== -->
-
-% <!--@============================================== -->
-
-% <!--@============================================== -->
-
-% <!--@============================================== -->
-
-% <!--@============================================== -->
-
-% <!--@============================================== -->
-
-% <!--@============================================== -->
-
-% <!--@============================================== -->
-
-% <!--@============================================== -->
+% <!--@============================================== --> 
 
 % <!--@saga -->
 
@@ -399,19 +285,7 @@ command
 
 % Interface Segregation Principle : https://ddd-practitioners.com/?page_id=817
 
-% <!--!========================================================== -->
-
-% <!--!========================================================== -->
-
-% <!--!========================================================== -->
-
-% <!--!========================================================== -->
-
-% <!--!========================================================== -->
-
-% <!--!========================================================== -->
-
-% <!--!========================================================== -->
+% <!--!========================================================== --> 
 
 % <!-- mỗi dịch vụ xuất bản và đăng ký các sự kiện nếu cần. Cách tiếp cận này có thể mở rộng và linh hoạt hơn so với điều phối, nhưng cũng phức tạp hơn trong việc triển khai và bảo trì. Tuy nhiên, nó cũng có thể linh hoạt hơn vì mỗi dịch vụ có thể phát triển độc lập và lỗi trong một dịch vụ không nhất thiết ảnh hưởng đến toàn bộ hệ thống. -->
 
