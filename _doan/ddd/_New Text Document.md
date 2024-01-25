@@ -64,14 +64,6 @@ https://culttt.com/2014/12/24/factories-domain-driven-design
 
 <!--!======================================================-->
 
-![Alt text](../___old/pictures/cu_hanh_onion.png)
-
-<!--!======================================================-->
-
-<!--@Các mẫu kỹ thuật (Tactical Patterns)-->
-
-<!--@Các mẫu kỹ thuật (Tactical Patterns)-->
-
 <!--@Các mẫu kỹ thuật (Tactical Patterns)-->
 
 <!--@Các mẫu kỹ thuật (Tactical Patterns)-->
