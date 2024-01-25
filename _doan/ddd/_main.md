@@ -1,10 +1,3 @@
-
-
-
-<!--https: //images.viblo.asia/fd4b10a0-f1b1-4ed1-9bd1-578c871820ae.png-->
-
-, gprc rabitmq đồng bộ hay k, ít hay nhiều như pub sub
-
 # 5. Service Mesh, CICD, microfe, API gateway, cache redis, log xử lí lỗi,
 
 <!---->
