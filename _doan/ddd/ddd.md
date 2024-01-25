@@ -1,83 +1,6 @@
 
-<!-- % Aggregate -->
-
-<!-- Aggregate: https://ddd-practitioners.com/home/glossary/aggregate/ -->
-
-<!-- [[Aggregate]] A cluster of associated objects that are treated as a unit for the purpose of data changes. External references are restricted to one member of the AGGREGATE, designated as the root. A set of consistency rules applies within the AGGREGATE’S boundaries. -->
-
-<!-- State Stored Aggregates : https://ddd-practitioners.com/state-stored-aggregate -->
-
-<!-- Consistency Boundary : https://ddd-practitioners.com/glossary/consistency-boundary -->
-
-<!-- & Factory - -->
-
-<!-- Factory : https://ddd-practitioners.com/factory -->
-
-<!-- [[Factory]] A mechanism for encapsulating complex creation logic and abstracting the type of a created object for the sake of a client. -->
-
-https://refactoring.guru/design-patterns/factory-method
-
-https://refactoring.guru/design-patterns/abstract-factory
-
-https://culttt.com/2014/12/24/factories-domain-driven-design
-
-<!-- % Repository Object - -->
-
-<!-- Repository : https://ddd-practitioners.com/?page_id=555 -->
-
-<!-- [[Repository]] A mechanism for encapsulating storage, retrieval, and search behavior which emulates a collection of objects. -->
-
-<!-- Module : https://ddd-practitioners.com/?page_id=618 -->
-
-<!-- % Domain Service - -->
-
-<!-- Domain Services: https://ddd-practitioners.com/home/glossary/domain-services -->
-
-<!-- % Application Services - -->
-
-<!-- Application Service : https://ddd-practitioners.com/application-service -->
-
-<!-- % Infrastructure Services - -->
-
-<!-- Infrastructure Service : https://ddd-practitioners.com/infrastructure-service -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--!======================================================-->
 
 
-
-**Kiến trúc phân lớp**
-
-Khi phát triển ứng dụng phần mềm, một phần lớn thành phần không liên quan trực tiếp đến nghiệp vụ, nhưng chúng là một phần của hạ tầng. Ví dụ như truy cập CSDL, hạ tầng mạng, ... Trong một ứng dụng hướng đối tượng thuần túy, các đoạn mã lại được nhúng vào trong các hành vi của các đối tượng nghiệp vụ vì nó là cách dễ và nhanh chóng. Tuy nhiên, việc trộn lẫn các đoạn mã liên quan đến nghiệp vụ có thể làm cho việc refactor khó khăn, kém linh hoạt.
-
-=> Cần phân chia một chương trình phức tạp thành các lớp. Theo thiết kế hướng miền có 4 lớp:
-
-<!--Giao diện người dùng (User Interface)-->
-
-Chịu trách nhiệm trình bày thông tin tới người sử dụng và thông dịch lệnh của người dùng.
-
-<!--Lớp ứng dụng (Application Layer)-->
-
-Đây là một lớp mỏng phối hợp các hoạt động của ứng dụng. Nó không chứa logic nghiệp vụ. Nó không lưu giữ trạng thái của các đối tượng nghiệp vụ nhưng nó có thể giữ trạng thái của một tiến trình của ứng dụng.
-
-<!--Lớp miền (Domain Layer)-->
-
-Lớp này chứa thông tin về các lĩnh vực. Đây là trái tim của nghiệp vụ phần mềm. Trạng thái của đối tượng nghiệp vụ được giữ tại đây. Persistence của các đối tượng nghiệp vụ và trạng thái của chúng có thể được ủy quyền cho Lớp hạ tầng.
-
-<!--Lớp hạ tầng (Infrastructure Layer)-->
-
-Lớp này đóng vai trò như một thư viện hỗ trợ cho tất cả các lớp còn lại. Nó cung cấp thông tin liên lạc giữa các lớp, cài đặt persistence cho đối tượng nghiệp vụ, đồng thời chứa các thư viện hỗ trợ cho Lớp giao diện người dùng, ...
 
 **Quản lý vòng đời của các đối tượng miền**
 
@@ -415,36 +338,7 @@ Các dịch vụ cơ sở hạ tầng cung cấp các tài nguyên bên ngoài t
 <!--@ Xong DDD -->
 
 <!--@ Xong DDD -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-
-<!-- -->
-
-<!-- --> 
-<!--@ -->
-
-<!--@ -->
+ 
 
 <!--@ -->
 
