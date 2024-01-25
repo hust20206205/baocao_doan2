@@ -60,19 +60,19 @@ Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nh
 
 
 
-% \begin{example} Trong miền    ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
+\begin{example} Trong miền    ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
 
-% \begin{figure}[H]
+\begin{figure}[H]
 
-% \centering
+\centering
 
-% \includegraphics[scale = 0.5]{pictures/_vi_du_mo_hinh_hat_nhan_chung_shared_kernel/main.excalidraw.png}
+\includegraphics[scale = 1]{pictures/_vi_du_mo_hinh_hat_nhan_chung_shared_kernel/main.png}
 
-% \caption{Ví dụ mô hình hạt nhân chung (Shared Kernel)}
+\caption{Ví dụ mô hình hạt nhân chung (Shared Kernel)}
 
-% \end{figure}
+\end{figure}
 
-% \end{example}
+\end{example}
 
 
 
@@ -195,7 +195,14 @@ Trong thực tế, nhóm phát triển nhà cung cấp luôn tham khảo ý ki�
 
 
 
-\paragraph{Mô hình tuân thủ (Conformist)}   Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp thực hiện tốt yêu cầu thì khách hàng cần tuân thủ chặt chẽ. Mô hình tuân thủ (Conformist) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu áp dụng mô hình, ngôn ngữ chung và các khái niệm của bối cảnh bị giới hạn thượng nguồn.
+\paragraph{Mô hình tuân thủ (Conformist)}   
+
+
+
+
+
+
+Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp thực hiện tốt yêu cầu thì khách hàng cần tuân thủ chặt chẽ. Mô hình tuân thủ (Conformist) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu áp dụng mô hình, ngôn ngữ chung và các khái niệm của bối cảnh bị giới hạn thượng nguồn.
 
 Trong mô hình tuân thủ bối cảnh bị giới hạn hạ lưu được ký hiệu là CF.
 
@@ -219,7 +226,21 @@ Trong mô hình tuân thủ bối cảnh bị giới hạn hạ lưu được k�
 
 % \end{example}
 
-\paragraph{Mô hình chống đổ vỡ (Anti Corruption Layer)}        Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp có thể thay đổi linh hoạt không đảm bảo đáp ứng nhu cầu của khách hàng thì khách hàng cần có giải pháp xử lí. Mô hình chống đổ vỡ (Anti Corruption Layer) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu sử dụng một lớp để dịch giữa ngôn ngữ của nó và ngôn ngữ của bối cảnh bị giới hạn thượng nguồn.
+
+
+
+
+
+
+\paragraph{Mô hình chống đổ vỡ (Anti Corruption Layer)}       
+
+
+
+
+
+
+
+Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp có thể thay đổi linh hoạt không đảm bảo đáp ứng nhu cầu của khách hàng thì khách hàng cần có giải pháp xử lí. Mô hình chống đổ vỡ (Anti Corruption Layer) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu sử dụng một lớp để dịch giữa ngôn ngữ của nó và ngôn ngữ của bối cảnh bị giới hạn thượng nguồn.
 
 Trong mô hình chống đổ vỡ, mỗi bối cảnh bị giới hạn có mô hình riêng biệt và lớp chống đổ vỡ cần kiến thức về mô hình hạ lưu và thượng nguồn để bảo vệ hạ lưu và duy trì tính toàn vẹn. 
 
@@ -284,7 +305,14 @@ Mô hình chống đổ vỡ được hiện thực hóa bằng   mẫu bộ đi
 
 \subsubsection{Mối quan hệ 1 - nhiều (One to Many Relationship)}
 
-\paragraph{Dịch vụ máy chủ mở (Open Host Service)}   Dịch vụ máy chủ mở (Open Host Service) là nhà cung cấp trong mô hình khách hàng - nhà cung cấp, dịch vụ máy chủ mở hiển thị một API công khai cho các bối cảnh bị giới hạn khác sử dụng chức năng của nhà cung cấp.
+\paragraph{Dịch vụ máy chủ mở (Open Host Service)} 
+
+
+
+
+
+
+Dịch vụ máy chủ mở (Open Host Service) là nhà cung cấp trong mô hình khách hàng - nhà cung cấp, dịch vụ máy chủ mở hiển thị một API công khai cho các bối cảnh bị giới hạn khác sử dụng chức năng của nhà cung cấp.
 
 Trong bản đồ bối cảnh, dịch vụ máy chủ mở được ký hiệu là OHS.
 
@@ -338,7 +366,15 @@ Trong bản đồ bối cảnh, dịch vụ máy chủ mở được ký hiệu 
 
 % \end{example}
 
-\paragraph{Ngôn ngữ được xuất bản (Published Language)}    Khi ngôn ngữ chung ở dịch vụ máy chủ mở được các nhóm phát triển trong bối cảnh bị giới hạn hạ lưu chấp nhận. Ngôn ngữ chung này được gọi là ngôn ngữ được xuất bản (Published Language). Ngôn ngữ được xuất bản có lợi ích là tính thống nhất trong hệ thống tuy nhiên cần phân tích kĩ vì nó có thể tạo ra sự nhầm lẫn trong bối cảnh bị giới hạn hạ lưu nào đó.
+\paragraph{Ngôn ngữ được xuất bản (Published Language)}   
+
+
+
+
+
+
+
+Khi ngôn ngữ chung ở dịch vụ máy chủ mở được các nhóm phát triển trong bối cảnh bị giới hạn hạ lưu chấp nhận. Ngôn ngữ chung này được gọi là ngôn ngữ được xuất bản (Published Language). Ngôn ngữ được xuất bản có lợi ích là tính thống nhất trong hệ thống tuy nhiên cần phân tích kĩ vì nó có thể tạo ra sự nhầm lẫn trong bối cảnh bị giới hạn hạ lưu nào đó.
 
 Trong bản đồ bối cảnh, ngôn ngữ được xuất bản kết hợp dịch vụ máy chủ mở được ký hiệu là OHS|PL.
 
