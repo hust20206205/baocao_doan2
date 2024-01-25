@@ -4,45 +4,6 @@
 
 
 
-\subsection{Đối tượng giá trị (Value Objects)}
-
-
-
-
-
-
-
-
-
-% % %! Aggregates/ /
-
-% % Tổng hợp là đối tượng kinh doanh trung tâm trong Bối cảnh bị giới hạn của chúng ta và xác định phạm vi nhất quán trong bối cảnh bị giới hạn đó.
-
-% % Tổng hợp = Mã định danh chính của Bối cảnh bị giới hạn của chúng ta
-
-
-
-
-
-
-
-\subsection{Miền dịch vụ (Service Domain)}
-
-
-
-
-
-
-
-
-
-\chapter{Một số công nghệ trong kiến trúc vi dịch vụ}
-
-
-
-
-
-
 <!-- Layered Architecture : https://ddd-practitioners.com/layered-architecture -->
 
 <!-- [[Layered Architecture]] A technique for separating the concerns of a software system, isolating a domain layer, among other things. -->
