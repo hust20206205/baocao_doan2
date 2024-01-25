@@ -65,30 +65,7 @@
 <!--có các mối quan hệ giữa các liên hệ được liên kết. các liên hệ được liên kết này được chuyển thành các vi dịch vụ và các mối quan hệ này được chuyển thành các tương tác giữa các vi dịch vụ.-->
 
 <!--Các vi dịch vụ cũng tạo ra nhiều loại sự kiện khác nhau. Những sự kiện này được sử dụng bởi các vi dịch vụ khác cũng như các thành phần trong bối cảnh liên kết nơi sự kiện được tạo ra.-->
-
-<!--!-->
-
-<!---->
-
-<!--1. **Tạo và Lưu Trữ Hóa Đơn: **-->
-
-<!--2. **Thông Tin Cơ Bản của Hóa Đơn: **-->
-
-<!--3. **Chữ Ký Số và Xác Minh Chữ Ký: **-->
-
-<!--4. **Quản Lý Mẫu Hóa Đơn: **-->
-
-<!--5. **Phân Quyền và Bảo Mật: **-->
-
-<!--6. **Gửi và Nhận Hóa Đơn: **-->
-
-<!--7. **Quản Lý Trạng Thái Hóa Đơn: **-->
-
-<!--8. **Tích Hợp Với Hệ Thống Khác: **-->
-
-<!--9. **Bảo Dưỡng và Backup: **-->
-
-<!--10. **Tương Thích Pháp Luật và Chuẩn Mực: **-->
+ 
 
 Repository độc lập miền và lưu trữ sql (dễ tuhaajn tiện Unit testing and Mocking)
 
