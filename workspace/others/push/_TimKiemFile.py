@@ -5,8 +5,9 @@ root_dir = os.path.join(os.getcwd(), r"..\\..\\..\\")
 # ext=".srt"
 # ext=".mp4"
 # ext=".py"
-ext=".md"
-ext=".tex"
+# ext=".md"
+# ext=".tex"
+ext=".png"
 files=glob.glob(os.path.join(  root_dir, f'**/*{ext}'), recursive=True) 
 print(len(files))
 for f in files:
