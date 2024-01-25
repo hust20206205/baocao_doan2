@@ -2,27 +2,27 @@ Có 3 loại mối quan hệ giữa các bối cảnh bị giới hạn là:
 
 \begin{itemize}
 
-    \item Mối quan hệ đối xứng (Symmetric Relationship)
+\item Mối quan hệ đối xứng (Symmetric Relationship)
 
-          \textbf{Mô tả:} Thể hiện sự tương tác 2 chiều giữa 2 bối cảnh bị giới hạn.
+\textbf{Mô tả:} Thể hiện sự tương tác 2 chiều giữa 2 bối cảnh bị giới hạn.
 
-    \item Mối quan hệ bất đối xứng (Asymmetric Relationship)
+\item Mối quan hệ bất đối xứng (Asymmetric Relationship)
 
-          \textbf{Mô tả:} Thể hiện sự tương tác 1 chiều giữa 2 các bối cảnh bị giới hạn.
+\textbf{Mô tả:} Thể hiện sự tương tác 1 chiều giữa 2 các bối cảnh bị giới hạn.
 
-    \item Mối quan hệ 1 - nhiều (One to Many Relationship)
+\item Mối quan hệ 1 - nhiều (One to Many Relationship)
 
-          \textbf{Mô tả:} Thể hiện sự tương tác 1 chiều giữa 1 bối cảnh bị giới hạn với nhiều bối cảnh bị giới hạn khác.
+\textbf{Mô tả:} Thể hiện sự tương tác 1 chiều giữa 1 bối cảnh bị giới hạn với nhiều bối cảnh bị giới hạn khác.
 
 \end{itemize}
 
 \begin{figure}[H]
 
-    \centering
+\centering
 
-    \includegraphics[scale = 0.5]{pictures/cac_moi_quan_he_boi_canh_gioi_han/main.png}
+\includegraphics[scale = 0.5]{pictures/cac_moi_quan_he_boi_canh_gioi_han/main.png}
 
-    \caption{Các mối quan hệ bối cảnh bị giới hạn}
+\caption{Các mối quan hệ bối cảnh bị giới hạn}
 
 \end{figure}
 
@@ -32,25 +32,21 @@ Có 3 loại mối quan hệ giữa các bối cảnh bị giới hạn là:
 
 Khi các bối cảnh bị giới hạn có quan hệ riêng biệt, không có sự phụ thuộc. Vì vậy, các bối cảnh bị giới hạn này có ngôn ngữ, mô hình, mục đích độc lập và thực thi riêng biệt. Các nhóm phát triển không phải cộng tác hay phối hợp với nhau từ đó đem lại lợi ích dễ dàng bảo trì và mở rộng hệ thống.
 
-\begin{example} Trong miền     ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
+\begin{example} Trong miền ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
 
-    \begin{figure}[H]
+\begin{figure}[H]
 
-        \centering
+\centering
 
-        \includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
 
-        \caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
 
-    \end{figure}
+\end{figure}
 
 \end{example}
 
-
 \paragraph{Mô hình hạt nhân chung (Shared Kernel)}
-
-
-
 
 Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nhau. Mô hình hợp tác (Partnership) tạo điều kiện cho việc giao tiếp và cộng tác giữa các bối cảnh bị giới hạn phụ thuộc. Tuy nhiên, sự phụ thuộc này dẫn đến mức độ kết hợp cao giữa các nhóm và bối cảnh bị giới hạn, dẫn tới mất đi tính độc lập.
 
@@ -58,120 +54,73 @@ Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nh
 
 Để giải quyết vấn đề bối cảnh bị giới hạn phụ thuộc lẫn nhau chúng ta có mô hình hạt nhân chung. Mô hình hạt nhân chung (Shared Kernel) cho phép các bối cảnh bị giới hạn có phần chia sẻ chung và có ranh giới phân định rõ ràng. Từ đó, tách việc quản lí các mô hình hạt nhân chung này một cách độc lập với phần còn lại của bối cảnh bị giới hạn. Khi cần thay đổi mà không phải của mô hình hạt nhân chung thì nhóm sẽ hoạt động độc lập. Thông thường, mô hình hạt nhân chung được hiện thực hóa bằng các thư viện chung. Tuy nhiên, chỉ sử dụng mô hình hạt nhân chung nếu quan hệ của các bối cảnh bị giới hạn nhỏ và ổn định để tránh quan hệ phức tạp và ràng buộc chặt chẽ.
 
+\begin{example} Trong miền ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
 
+\begin{figure}[H]
 
-\begin{example} Trong miền    ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
+\centering
 
-    \begin{figure}[H]
+\includegraphics[scale = 1]{pictures/_vi_du_mo_hinh_hat_nhan_chung_shared_kernel/main.png}
 
-        \centering
+\caption{Ví dụ mô hình hạt nhân chung (Shared Kernel)}
 
-        \includegraphics[scale = 1]{pictures/_vi_du_mo_hinh_hat_nhan_chung_shared_kernel/main.png}
-
-        \caption{Ví dụ mô hình hạt nhân chung (Shared Kernel)}
-
-    \end{figure}
+\end{figure}
 
 \end{example}
 
-
-
-
-
-
-
-
 \subsubsection{Mối quan hệ bất đối xứng (Asymmetric Relationship)}
-
-
-
-
-
-
-
-
 
 Trong mối quan hệ bất đối xứng, một bối cảnh bị giới hạn có sự phụ thuộc vào một bối cảnh bị giới hạn khác. Mối quan hệ này được mô tả bằng cách gán vai trò cho bối cảnh bị giới hạn:
 
+\begin{itemize}
 
-
-
-
-
-
-
-
-
+\item \textbf{Bối cảnh bị giới hạn thượng nguồn (Upstream):}
 
 \begin{itemize}
 
-    \item \textbf{Bối cảnh bị giới hạn thượng nguồn (Upstream):}
+\item Bối cảnh bị giới hạn cung cấp cho bối cảnh bị giới hạn khác. Ký hiệu: U
 
-          \begin{itemize}
+\end{itemize}
 
-              \item Bối cảnh bị giới hạn cung cấp cho bối cảnh bị giới hạn khác.  Ký hiệu: U
+\item \textbf{Bối cảnh bị giới hạn hạ lưu (Downstream):}
 
-          \end{itemize}
+\begin{itemize}
 
-    \item \textbf{Bối cảnh bị giới hạn hạ lưu (Downstream):}
+\item Bối cảnh bị giới hạn phụ thuộc vào bối cảnh bị giới hạn khác. Ký hiệu: D
 
-          \begin{itemize}
-
-              \item Bối cảnh bị giới hạn phụ thuộc vào bối cảnh bị giới hạn khác.  Ký hiệu: D
-
-          \end{itemize}
+\end{itemize}
 
 \end{itemize}
 
 \begin{example} Mối quan hệ bất đối xứng giữa bối cảnh bị giới hạn A và bối cảnh bị giới hạn B.
 
-    \begin{itemize}
+\begin{itemize}
 
-        \item Bối cảnh bị giới hạn A ràng buộc với bối cảnh bị giới hạn B
+\item Bối cảnh bị giới hạn A ràng buộc với bối cảnh bị giới hạn B
 
-        \item Bối cảnh bị giới hạn A đóng vai trò là bối cảnh bị giới hạn hạ lưu (Downstream)
+\item Bối cảnh bị giới hạn A đóng vai trò là bối cảnh bị giới hạn hạ lưu (Downstream)
 
-        \item Bối cảnh bị giới hạn B đóng vai trò là bối cảnh bị giới hạn thượng nguồn (Upstream)
+\item Bối cảnh bị giới hạn B đóng vai trò là bối cảnh bị giới hạn thượng nguồn (Upstream)
 
-        \item Bối cảnh bị giới hạn A có kiến thức về các mô hình trong bối cảnh bị giới hạn B
+\item Bối cảnh bị giới hạn A có kiến thức về các mô hình trong bối cảnh bị giới hạn B
 
-        \item Bối cảnh bị giới hạn B không có bất kỳ kiến thức nào về mô hình trong bối cảnh bị giới hạn A
+\item Bối cảnh bị giới hạn B không có bất kỳ kiến thức nào về mô hình trong bối cảnh bị giới hạn A
 
-    \end{itemize}
+\end{itemize}
 
-    \begin{figure}[H]
+\begin{figure}[H]
 
-        \centering
+\centering
 
-        \includegraphics[scale = 0.5]{pictures/moi_quan_he_bat_doi_xung/main.drawio.png}
+\includegraphics[scale = 0.5]{pictures/moi_quan_he_bat_doi_xung/main.drawio.png}
 
-        \caption{Ví dụ mối quan hệ bất đối xứng}
+\caption{Ví dụ mối quan hệ bất đối xứng}
 
-    \end{figure}
+\end{figure}
 
 \end{example}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \paragraph{Mô hình khách hàng - nhà cung cấp (Customer - Supplier)}
-
 
 Được thể hiện rằng bối cảnh bị giới hạn thượng nguồn đáp ứng nhu cầu của bối cảnh bị giới hạn hạ lưu.
 
@@ -179,155 +128,84 @@ Khi đó:
 
 \begin{itemize}
 
-    \item Bối cảnh bị giới hạn thượng nguồn được gọi là nhà cung cấp.
+\item Bối cảnh bị giới hạn thượng nguồn được gọi là nhà cung cấp.
 
-    \item Bối cảnh bị giới hạn hạ lưu được gọi là khách hàng.
+\item Bối cảnh bị giới hạn hạ lưu được gọi là khách hàng.
 
 \end{itemize}
 
 Trong thực tế, nhóm phát triển nhà cung cấp luôn tham khảo ý kiến của nhóm phát triển khách hàng và có bộ kiểm thử để đảm bảo rằng dịch vụ của nhà cung cấp đáp ứng được yêu cầu của khách hàng.
 
-
-
-
-
-
-
-
-
 \paragraph{Mô hình tuân thủ (Conformist)}
-
-
-
-
-
 
 Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp thực hiện tốt yêu cầu thì khách hàng cần tuân thủ chặt chẽ. Mô hình tuân thủ (Conformist) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu áp dụng mô hình, ngôn ngữ chung và các khái niệm của bối cảnh bị giới hạn thượng nguồn.
 
 Trong mô hình tuân thủ bối cảnh bị giới hạn hạ lưu được ký hiệu là CF.
 
-
-
 \begin{figure}[H]
 
-    \centering
+\centering
 
-    \includegraphics[scale = 0.5]{pictures/_vi_du_mo_hinh_tuan_thu_conformist/map.drawio.png}
+\includegraphics[scale = 0.5]{pictures/_vi_du_mo_hinh_tuan_thu_conformist/map.drawio.png}
 
-    \caption{Ví dụ mô hình  tuân thủ (Conformist)}
+\caption{Ví dụ mô hình tuân thủ (Conformist)}
 
 \end{figure}
 
-
-
-
-
-
-
-
 \paragraph{Mô hình chống đổ vỡ (Anti Corruption Layer)}
-
-
-
-
-
-
 
 Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp có thể thay đổi linh hoạt không đảm bảo đáp ứng nhu cầu của khách hàng thì khách hàng cần có giải pháp xử lí. Mô hình chống đổ vỡ (Anti Corruption Layer) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu sử dụng một lớp để dịch giữa ngôn ngữ của nó và ngôn ngữ của bối cảnh bị giới hạn thượng nguồn.
 
 Trong mô hình chống đổ vỡ, mỗi bối cảnh bị giới hạn có mô hình riêng biệt và lớp chống đổ vỡ cần kiến thức về mô hình hạ lưu và thượng nguồn để bảo vệ hạ lưu và duy trì tính toàn vẹn.
 
-
 Trong mô hình chống đổ vỡ bối cảnh bị giới hạn hạ lưu được ký hiệu là ACL.
 
-
-
-Mô hình chống đổ vỡ được hiện thực hóa bằng   mẫu bộ điều hợp  (Adapter pattern).
-
+Mô hình chống đổ vỡ được hiện thực hóa bằng mẫu bộ điều hợp (Adapter pattern).
 
 \begin{figure}[H]
 
-    \centering
+\centering
 
-    \includegraphics[scale = 0.5]{pictures/_vi_du_mo_hinh_chong_do_vo_anti_corruption_layer/map.drawio.png}
+\includegraphics[scale = 0.5]{pictures/_vi_du_mo_hinh_chong_do_vo_anti_corruption_layer/map.drawio.png}
 
-    \caption{Ví dụ mô hình     chống đổ vỡ (Anti Corruption Layer)}
+\caption{Ví dụ mô hình chống đổ vỡ (Anti Corruption Layer)}
 
 \end{figure}
-
-
-
-
-
-
-
-
-
-
-
 
 \subsubsection{Mối quan hệ 1 - nhiều (One to Many Relationship)}
 
 \paragraph{Dịch vụ máy chủ mở (Open Host Service)}
 
-
-
-
-
-
 Dịch vụ máy chủ mở (Open Host Service) là nhà cung cấp trong mô hình khách hàng - nhà cung cấp, dịch vụ máy chủ mở hiển thị một API công khai cho các bối cảnh bị giới hạn khác sử dụng chức năng của nhà cung cấp.
 
 Trong bản đồ bối cảnh, dịch vụ máy chủ mở được ký hiệu là OHS.
 
-
-
-
-
-
 \begin{figure}[H]
 
-    \centering
+\centering
 
-    \includegraphics[scale = 0.5]{pictures/_vi_du_dich_vu_may_chu_mo_open_host_service/map.drawio.png}
+\includegraphics[scale = 0.5]{pictures/_vi_du_dich_vu_may_chu_mo_open_host_service/map.drawio.png}
 
-    \caption{Ví dụ dịch vụ máy chủ mở (Open Host Service)}
+\caption{Ví dụ dịch vụ máy chủ mở (Open Host Service)}
 
 \end{figure}
 
 \paragraph{Ngôn ngữ được xuất bản (Published Language)}
 
-
-
-
-
-
-
 Khi ngôn ngữ chung ở dịch vụ máy chủ mở được các nhóm phát triển trong bối cảnh bị giới hạn hạ lưu chấp nhận. Ngôn ngữ chung này được gọi là ngôn ngữ được xuất bản (Published Language). Ngôn ngữ được xuất bản có lợi ích là tính thống nhất trong hệ thống tuy nhiên cần phân tích kĩ vì nó có thể tạo ra sự nhầm lẫn trong bối cảnh bị giới hạn hạ lưu nào đó.
 
 Trong bản đồ bối cảnh, ngôn ngữ được xuất bản kết hợp dịch vụ máy chủ mở được ký hiệu là OHS|PL.
 
-
-
-
-
-
-
-
 \begin{figure}[H]
 
-    \centering
+\centering
 
-    \includegraphics[scale = 0.5]{pictures/_vi_du_ngon_ngu_duoc_xuat_ban_published_language/map.drawio.png}
+\includegraphics[scale = 0.5]{pictures/_vi_du_ngon_ngu_duoc_xuat_ban_published_language/map.drawio.png}
 
-\caption{Ví dụ ngôn ngữ được xuất bản (Published Language)}  
+\caption{Ví dụ ngôn ngữ được xuất bản (Published Language)}
 
 \end{figure}
 
-
-
-
-
-
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -343,6 +221,5 @@ Trong bản đồ bối cảnh, ngôn ngữ được xuất bản kết hợp d�
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 % %! Hướng dẫn 6/6
