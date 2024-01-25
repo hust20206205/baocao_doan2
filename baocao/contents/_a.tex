@@ -172,67 +172,30 @@ Trong mối quan hệ bất đối xứng, một bối cảnh bị giới hạn 
 
 \paragraph{Mô hình khách hàng - nhà cung cấp (Customer - Supplier)}
 
-% Mô hình khách hàng - nhà cung cấp (Customer - Supplier) được thể hiện rằng bối cảnh bị giới hạn thượng nguồn đáp ứng nhu cầu của bối cảnh bị giới hạn hạ lưu.
 
-% Khi đó:
+Được thể hiện rằng bối cảnh bị giới hạn thượng nguồn đáp ứng nhu cầu của bối cảnh bị giới hạn hạ lưu.
 
-% \begin{itemize}
+Khi đó:
 
-% \item Bối cảnh bị giới hạn thượng nguồn được gọi là nhà cung cấp.
+\begin{itemize}
 
-% \item Bối cảnh bị giới hạn hạ lưu được gọi là khách hàng.
+\item Bối cảnh bị giới hạn thượng nguồn được gọi là nhà cung cấp.
 
-% \end{itemize}
+\item Bối cảnh bị giới hạn hạ lưu được gọi là khách hàng.
 
-% Trong thực tế, nhóm phát triển nhà cung cấp luôn tham khảo ý kiến của nhóm phát triển khách hàng và có bộ kiểm thử để đảm bảo rằng dịch vụ của nhà cung cấp đáp ứng được yêu cầu của khách hàng.
+\end{itemize}
 
-\paragraph{Mô hình tuân thủ (Conformist)}
+Trong thực tế, nhóm phát triển nhà cung cấp luôn tham khảo ý kiến của nhóm phát triển khách hàng và có bộ kiểm thử để đảm bảo rằng dịch vụ của nhà cung cấp đáp ứng được yêu cầu của khách hàng.
 
-% Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp thực hiện tốt yêu cầu thì khách hàng cần tuân thủ chặt chẽ. Mô hình tuân thủ (Conformist) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu áp dụng mô hình, ngôn ngữ chung và các khái niệm của bối cảnh bị giới hạn thượng nguồn.
+\paragraph{Mô hình tuân thủ (Conformist)}   Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp thực hiện tốt yêu cầu thì khách hàng cần tuân thủ chặt chẽ. Mô hình tuân thủ (Conformist) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu áp dụng mô hình, ngôn ngữ chung và các khái niệm của bối cảnh bị giới hạn thượng nguồn.
 
-% Trong mô hình tuân thủ bối cảnh bị giới hạn hạ lưu được ký hiệu là CF.
+Trong mô hình tuân thủ bối cảnh bị giới hạn hạ lưu được ký hiệu là CF.
 
 % %! $VD: - - >
 
 % %! $VD: A - CF - U - B - - >
 
-% %! $VD: A - users(id, name) - B cũng users(id, name) - - >
-
-% % Vẽ lại bản đồ tiếng Việt
-
-% % Vẽ lại bản đồ tiếng Việt
-
-% % Vẽ lại bản đồ tiếng Việt
-
-% % Vẽ lại bản đồ tiếng Việt
-
-% % Vẽ lại bản đồ tiếng Việt
-
-% % Vẽ lại bản đồ tiếng Việt
-
-% % Vẽ lại bản đồ tiếng Việt
-
-% % Vẽ lại bản đồ tiếng Việt
-
-% % Từ bản đồ lấy vi dụ cho các mô hình
-
-% % Từ bản đồ lấy vi dụ cho các mô hình
-
-% % Từ bản đồ lấy vi dụ cho các mô hình
-
-% % Từ bản đồ lấy vi dụ cho các mô hình
-
-% % Từ bản đồ lấy vi dụ cho các mô hình
-
-% % Từ bản đồ lấy vi dụ cho các mô hình
-
-% % Từ bản đồ lấy vi dụ cho các mô hình
-
-% % Từ bản đồ lấy vi dụ cho các mô hình
-
-% % Từ bản đồ lấy vi dụ cho các mô hình
-
-% % Từ bản đồ lấy vi dụ cho các mô hình
+% %! $VD: A - users(id, name) - B cũng users(id, name) - - > 
 
 % \begin{example} Trong miền    ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
 
@@ -250,15 +213,18 @@ Trong mối quan hệ bất đối xứng, một bối cảnh bị giới hạn 
 
 \paragraph{Mô hình chống đổ vỡ (Anti Corruption Layer)}
 
-% Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp có thể thay đổi linh hoạt không đảm bảo đáp ứng nhu cầu của khách hàng thì khách hàng cần có giải pháp xử lí. Mô hình chống đổ vỡ (Anti Corruption Layer) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu sử dụng một lớp để dịch giữa ngôn ngữ của nó và ngôn ngữ của bối cảnh bị giới hạn thượng nguồn.
+Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp có thể thay đổi linh hoạt không đảm bảo đáp ứng nhu cầu của khách hàng thì khách hàng cần có giải pháp xử lí. Mô hình chống đổ vỡ (Anti Corruption Layer) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu sử dụng một lớp để dịch giữa ngôn ngữ của nó và ngôn ngữ của bối cảnh bị giới hạn thượng nguồn.
 
-% Trong mô hình chống đổ vỡ, mỗi bối cảnh bị giới hạn có mô hình riêng biệt và lớp chống đổ vỡ cần kiến thức về mô hình hạ lưu và thượng nguồn để bảo vệ hạ lưu và duy trì tính toàn vẹn.
+Trong mô hình chống đổ vỡ, mỗi bối cảnh bị giới hạn có mô hình riêng biệt và lớp chống đổ vỡ cần kiến thức về mô hình hạ lưu và thượng nguồn để bảo vệ hạ lưu và duy trì tính toàn vẹn. 
 
-% %@ Façade
 
-% %@ Adapter
+Trong mô hình chống đổ vỡ bối cảnh bị giới hạn hạ lưu được ký hiệu là ACL.
 
-% Trong mô hình chống đổ vỡ bối cảnh bị giới hạn hạ lưu được ký hiệu là ACL.
+
+
+Mô hình chống đổ vỡ được hiện thực hóa bằng   mẫu bộ điều hợp  (Adapter pattern).
+
+
 
 % % Vẽ lại bản đồ tiếng Việt
 
@@ -314,9 +280,9 @@ Trong mối quan hệ bất đối xứng, một bối cảnh bị giới hạn 
 
 \paragraph{Dịch vụ máy chủ mở (Open Host Service)}
 
-% Dịch vụ máy chủ mở (Open Host Service) là nhà cung cấp trong mô hình khách hàng - nhà cung cấp, dịch vụ máy chủ mở hiển thị một API công khai cho các bối cảnh bị giới hạn khác sử dụng chức năng của nhà cung cấp.
+Dịch vụ máy chủ mở (Open Host Service) là nhà cung cấp trong mô hình khách hàng - nhà cung cấp, dịch vụ máy chủ mở hiển thị một API công khai cho các bối cảnh bị giới hạn khác sử dụng chức năng của nhà cung cấp.
 
-% Trong bản đồ bối cảnh, dịch vụ máy chủ mở được ký hiệu là OHS.
+Trong bản đồ bối cảnh, dịch vụ máy chủ mở được ký hiệu là OHS.
 
 % % Vẽ lại bản đồ tiếng Việt
 
@@ -370,9 +336,9 @@ Trong mối quan hệ bất đối xứng, một bối cảnh bị giới hạn 
 
 \paragraph{Ngôn ngữ được xuất bản (Published Language)}
 
-% Khi ngôn ngữ chung ở dịch vụ máy chủ mở được các nhóm phát triển trong bối cảnh bị giới hạn hạ lưu chấp nhận. Ngôn ngữ chung này được gọi là ngôn ngữ được xuất bản (Published Language). Ngôn ngữ được xuất bản có lợi ích là tính thống nhất trong hệ thống tuy nhiên cần phân tích kĩ vì nó có thể tạo ra sự nhầm lẫn trong bối cảnh bị giới hạn hạ lưu nào đó.
+Khi ngôn ngữ chung ở dịch vụ máy chủ mở được các nhóm phát triển trong bối cảnh bị giới hạn hạ lưu chấp nhận. Ngôn ngữ chung này được gọi là ngôn ngữ được xuất bản (Published Language). Ngôn ngữ được xuất bản có lợi ích là tính thống nhất trong hệ thống tuy nhiên cần phân tích kĩ vì nó có thể tạo ra sự nhầm lẫn trong bối cảnh bị giới hạn hạ lưu nào đó.
 
-% Trong bản đồ bối cảnh, ngôn ngữ được xuất bản kết hợp dịch vụ máy chủ mở được ký hiệu là OHS|PL.
+Trong bản đồ bối cảnh, ngôn ngữ được xuất bản kết hợp dịch vụ máy chủ mở được ký hiệu là OHS|PL.
 
 % % Vẽ lại bản đồ tiếng Việt
 
