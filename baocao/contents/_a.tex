@@ -1,47 +1,53 @@
-<!--  : https://ddd-practitioners.com/layered-architecture -->
-
-<!-- [[Layered Architecture]] A technique for separating the concerns of a software system, isolating a domain layer, among other things. -->
-
-<!-- Quản lí vòng đời -->
-
-<!-- [[Life Cycle]] A sequence of states an object can take on between creation and deletion, typically with constraints to ensure integrity when changing from one state to another. May include migration of an [[Entity]] between systems and different [[Bounded Contexts]]. -->
+% <!-- Infrastructure Service : https://ddd-practitioners.com/infrastructure-service -->
+% <!-- Application Service : https://ddd-practitioners.com/application-service -->
+% <!--  : https://ddd-practitioners.com/layered-architecture -->
+% <!-- Module : https://ddd-practitioners.com/?page_id=618 -->
 
 
+Khi phát triển ứng dụng phần mềm, một phần lớn thành phần không liên quan trực tiếp đến nghiệp vụ, nhưng chúng là một phần của hạ tầng. Ví dụ như truy cập CSDL, hạ tầng mạng, ... Trong một ứng dụng hướng đối tượng thuần túy, các đoạn mã lại được nhúng vào trong các hành vi của các đối tượng nghiệp vụ vì nó là cách dễ và nhanh chóng. Tuy nhiên, việc trộn lẫn các đoạn mã liên quan đến nghiệp vụ có thể làm cho việc sửa đổi  khó khăn, kém linh hoạt.
 
-
-
-
-<!-- % Application Services - -->
-
-<!-- Application Service : https://ddd-practitioners.com/application-service -->
-
-<!-- % Infrastructure Services - -->
-
-<!-- Infrastructure Service : https://ddd-practitioners.com/infrastructure-service -->
-
-
-
-
-
-Khi phát triển ứng dụng phần mềm, một phần lớn thành phần không liên quan trực tiếp đến nghiệp vụ, nhưng chúng là một phần của hạ tầng. Ví dụ như truy cập CSDL, hạ tầng mạng, ... Trong một ứng dụng hướng đối tượng thuần túy, các đoạn mã lại được nhúng vào trong các hành vi của các đối tượng nghiệp vụ vì nó là cách dễ và nhanh chóng. Tuy nhiên, việc trộn lẫn các đoạn mã liên quan đến nghiệp vụ có thể làm cho việc refactor khó khăn, kém linh hoạt.
-
-=> Cần phân chia một chương trình phức tạp thành các lớp. Theo thiết kế hướng miền có 4 lớp:
+Theo thiết kế hướng miền có 4 lớp:
 
 <!--Giao diện người dùng (User Interface)-->
 
+
 Chịu trách nhiệm trình bày thông tin tới người sử dụng và thông dịch lệnh của người dùng.
+
+
 
 <!--Lớp ứng dụng (Application Layer)-->
 
 Đây là một lớp mỏng phối hợp các hoạt động của ứng dụng. Nó không chứa logic nghiệp vụ. Nó không lưu giữ trạng thái của các đối tượng nghiệp vụ nhưng nó có thể giữ trạng thái của một tiến trình của ứng dụng.
 
+
+
 <!--Lớp miền (Domain Layer)-->
 
 Lớp này chứa thông tin về các lĩnh vực. Đây là trái tim của nghiệp vụ phần mềm. Trạng thái của đối tượng nghiệp vụ được giữ tại đây. Persistence của các đối tượng nghiệp vụ và trạng thái của chúng có thể được ủy quyền cho Lớp hạ tầng.
 
+
+
 <!--Lớp hạ tầng (Infrastructure Layer)-->
 
 Lớp này đóng vai trò như một thư viện hỗ trợ cho tất cả các lớp còn lại. Nó cung cấp thông tin liên lạc giữa các lớp, cài đặt persistence cho đối tượng nghiệp vụ, đồng thời chứa các thư viện hỗ trợ cho Lớp giao diện người dùng, ...
+
+
+
+
+
+<!-- [[Layered Architecture]] A technique for separating the concerns of a software system, isolating a domain layer, among other things. -->
+ 
+<!-- [[Kiến trúc lớp]] Một kỹ thuật để tách các mối quan tâm của hệ thống phần mềm, cô lập lớp miền, cùng những thứ khác. -->
+
+
+<!-- % Application Services - -->
+
+
+<!-- % Infrastructure Services - -->
+
+
+
+
 
 
 
@@ -55,3 +61,58 @@ Lớp này đóng vai trò như một thư viện hỗ trợ cho tất cả các
 <!---->
 
 <!---->
+
+
+Chuyển đến nội dung
+Đối với người hành nghề bởi người hành nghề
+Tìm kiếm
+Thiết kế hướng miền: Hướng dẫn dành cho người thực hành
+Câu hỏi thường gặp
+Bảng chú giải
+Về chúng tôi
+Cuốn sách của chúng tôi!
+Trang chủTrang chủBảng chú giảiKiến trúc lớp
+Kiến trúc lớp
+Kiến trúc lớp là một mẫu thiết kế phần mềm phân chia các mối quan tâm khác nhau của hệ thống phần mềm thành các lớp hoặc thành phần khác nhau, trong đó mỗi lớp cung cấp một tập hợp dịch vụ cụ thể cho lớp phía trên nó. Sự tách biệt các mối quan tâm này giúp duy trì tính mô-đun và khả năng mở rộng của hệ thống, cũng như giảm độ phức tạp của thiết kế tổng thể.
+
+Trong Thiết kế hướng miền (DDD), kiến ​​trúc phân lớp thường được sử dụng để tổ chức miền giải pháp thành các phần khác nhau. Ví dụ: nó có thể bao gồm lớp trình bày, lớp ứng dụng, lớp miền và lớp cơ sở hạ tầng. Lớp trình bày xử lý sự tương tác của người dùng, lớp ứng dụng triển khai các trường hợp sử dụng và quy trình làm việc, lớp miền thể hiện các quy tắc và thực thể nghiệp vụ, còn lớp cơ sở hạ tầng cung cấp các dịch vụ kỹ thuật như lưu giữ lâu dài, nhắn tin và bảo mật.
+
+Việc sử dụng kiến ​​trúc phân lớp trong DDD giúp đảm bảo rằng các phần khác nhau của hệ thống được phân tách rõ ràng và các tương tác giữa chúng được xác định rõ ràng. Điều này giúp việc hiểu và bảo trì hệ thống dễ dàng hơn cũng như mở rộng hệ thống trong tương lai khi có yêu cầu mới.
+
+Ví dụ
+Một ví dụ về kiến ​​trúc phân lớp có thể là một ứng dụng web bao gồm các lớp sau:
+
+Lớp trình bày : Lớp này có nhiệm vụ trình bày giao diện người dùng cho người dùng. Nó bao gồm các thành phần như bộ điều khiển, dạng xem và mẫu.
+Lớp ứng dụng : Lớp này chịu trách nhiệm triển khai các trường hợp sử dụng hoặc logic nghiệp vụ của ứng dụng. Nó bao gồm các thành phần như dịch vụ, bộ điều khiển trường hợp sử dụng và DTO.
+Lớp miền : Lớp này chịu trách nhiệm xác định các quy tắc nghiệp vụ và đối tượng miền của ứng dụng. Nó bao gồm các thành phần như thực thể, đối tượng giá trị và dịch vụ miền.
+Lớp Persistence : Lớp này chịu trách nhiệm lưu trữ và truy xuất dữ liệu từ cơ sở dữ liệu. Nó bao gồm các thành phần như kho lưu trữ, DAO và khung ORM.
+Luồng dữ liệu giữa các lớp trong kiến ​​trúc phân lớp thường là một chiều, trong đó mỗi lớp chỉ giao tiếp với lớp ngay bên dưới hoặc bên trên nó.
+
+Khi nào nên sử dụng
+Kiến trúc phân lớp là một mẫu kiến ​​trúc phổ biến phù hợp trong nhiều tình huống. Nó đặc biệt hữu ích khi xây dựng các hệ thống lớn, phức tạp cần dễ dàng bảo trì và mở rộng.
+
+Một số tình huống trong đó kiến ​​trúc phân lớp có thể phù hợp bao gồm:
+
+Các ứng dụng doanh nghiệp quy mô lớn có nhiều mô-đun hoặc hệ thống con khác nhau.
+Các ứng dụng cần hỗ trợ nhiều giao diện, chẳng hạn như web và di động.
+Các ứng dụng đòi hỏi mức độ linh hoạt và mô-đun cao, trong đó các thành phần riêng lẻ có thể dễ dàng hoán đổi hoặc thay thế.
+Các ứng dụng yêu cầu phân tách chặt chẽ các mối quan tâm, có ranh giới rõ ràng giữa các lớp khác nhau của hệ thống.
+Nói chung, kiến ​​trúc phân lớp có thể là một lựa chọn tốt khi bạn cần xây dựng một hệ thống dễ hiểu, dễ bảo trì và mở rộng theo thời gian. Nó có thể giúp bạn giữ mã của mình ngăn nắp và đảm bảo rằng mỗi lớp của hệ thống đều có trách nhiệm được xác định rõ ràng.
+
+Khi nào nên tránh
+Kiến trúc phân lớp có thể không phù hợp trong một số trường hợp nhất định, bao gồm:
+
+Dự án nhỏ: Đối với các dự án nhỏ có yêu cầu đơn giản, kiến ​​trúc phân lớp có thể gây ra sự phức tạp không cần thiết.
+Các dự án có thay đổi thường xuyên: Nếu một dự án yêu cầu thay đổi thường xuyên, kiến ​​trúc phân lớp có thể gây khó khăn cho việc sửa đổi ứng dụng vì những thay đổi đối với một lớp có thể ảnh hưởng đến các lớp khác.
+Các dự án có yêu cầu thay đổi: Nếu các yêu cầu của dự án không được hiểu rõ hoặc có khả năng thay đổi thường xuyên thì kiến ​​trúc phân lớp có thể không phải là cách tiếp cận tốt nhất vì khó có thể sửa đổi ứng dụng để phù hợp với các yêu cầu thay đổi.
+Các dự án yêu cầu hiệu suất cao: Kiến trúc phân lớp có thể gây ra chi phí về thời gian xử lý và mức sử dụng bộ nhớ, điều này có thể ảnh hưởng đến hiệu suất của ứng dụng.
+Dự án có độ phức tạp thấp: Đối với các ứng dụng có độ phức tạp thấp, kiến ​​trúc phân lớp có thể là quá mức cần thiết và có thể không mang lại bất kỳ lợi ích đáng kể nào so với kiến ​​trúc đơn giản hơn.
+So sánh với kiến ​​trúc lát dọc
+Kiến trúc phân lớp và kiến ​​trúc lát dọc đều được sử dụng phổ biến trong phát triển phần mềm, nhưng chúng khác nhau về cách tiếp cận cấu trúc mã.
+
+Kiến trúc phân lớp dựa trên sự phân tách chặt chẽ các mối quan tâm, trong đó mỗi lớp có trách nhiệm cụ thể và chỉ giao tiếp với các lớp liền kề. Thông thường, các lớp trong kiến ​​trúc phân lớp bao gồm lớp trình bày, lớp ứng dụng, lớp miền và lớp dữ liệu. Kiến trúc này rất phù hợp cho các hệ thống lớn, phức tạp, trong đó việc duy trì sự tách biệt giữa các thành phần là rất quan trọng.
+
+Mặt khác, kiến ​​trúc lát cắt dọc tập trung vào việc tổ chức mã xung quanh các tính năng hoặc chức năng cụ thể, với tất cả các lớp được biểu thị trong mỗi lát cắt dọc. Trong kiến ​​trúc này, mỗi lát bao gồm một lớp trình bày, lớp ứng dụng, lớp miền và lớp dữ liệu, tất cả đều tập trung vào một tính năng hoặc chức năng cụ thể. Kiến trúc này rất phù hợp cho các hệ thống nhỏ hơn, tập trung hơn và cho các nhóm ưu tiên phát triển nhanh chóng và triển khai thường xuyên.
+
+Nhìn chung, kiến ​​trúc phân lớp phù hợp hơn với các hệ thống lớn, phức tạp, trong đó khả năng bảo trì và mở rộng là quan trọng, trong khi kiến ​​trúc lát dọc phù hợp hơn với các hệ thống nhỏ hơn, tập trung hơn, nơi việc phát triển nhanh chóng và triển khai thường xuyên là quan trọng.
+
