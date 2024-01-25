@@ -1,48 +1,4 @@
-<!--@============================================== -->
-
-<!--@ Latex -->
-<!-- C:/Users/vvn20206205/Documents/UdemyMasterAcademicTypesettingwithLaTeX202111_VVN\000000005\000000004_vn2_nghia.mp4 -->
-
-<!-- Cần thêm nhiều ví dụ -->
-<!-- Màu đỏ của số trang, đầu chương -->
-<!-- Tiêu đề chương các mục có tiếng anh -->
-<!-- ảnh,  bảng luôn căn giữa -->
-<!-- ảnh,  bảng luôn  có 2 begin + end -->
-<!-- ảnh luôn dùng [scale] -->
-<!-- ảnh luôn có folder/main -->
-
-
-
-<!-- \newpage phải ở bên ngoài main -->
-
-
-<!--@============================================== -->
-
-https://hoadondientu.gdt.gov.vn
-
-https://helpsme.misa.vn/2020/kb/quan-ly-hoa-don-dien-tu
-
-https://ddd-practitioners.com/home/glossary
-
-https://www.infoq.com/minibooks/domain-driven-design-quickly
-
-<!--@============================================== -->
-
-Hãy giúp tôi sửa lỗi chính tả và ngữ pháp và mạch lạc:
-
-Tóm tắt nội dung theo 10 gạch đầu dòng:
-
-\emph{ChuDuocDanhDau}
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
-
-<!--@============================================== -->
+ 
 
 <!-- Layered Architecture : https://ddd-practitioners.com/layered-architecture -->
 
@@ -466,36 +422,10 @@ Các dịch vụ cơ sở hạ tầng cung cấp các tài nguyên bên ngoài t
 
 <!--@============================================== -->
 
-tối nay phair xong ddd
-
-nếu có thể thì làm cái nghiệp vụ
-
-xem video itiso
-
-latex ctg htpt ttss
 
 <!-- -->
 
-<!-- -->
-
-<!-- -->
-
-<!-- -->
-
-<!-- -->
-
-<!--! Hãy sử dụng Ngôn ngữ chung (Ubiquitous Language) trong domain driven design (DDD) với nội dung nghiệp vụ kinh doanh sau: -->
-
-<!-- 1. **Khách hàng (Customer):** -->
-
-<!-- - **Mô tả:** Người sử dụng dịch vụ, có thể là cá nhân hoặc tổ chức. -->
-
-<!-- 2. **Hóa đơn điện tử (Electronic Invoice):** -->
-
-<!-- - **Mô tả:** Hóa đơn được tạo và quản lý điện tử thay vì truyền thống trên giấy. -->
-
-<!--@ -->
-
+<!-- --> 
 <!--@ -->
 
 <!--@ -->
@@ -571,19 +501,7 @@ https://culttt.com/2015/11/11/what-is-active-model
 <!--@saga -->
 
 <!--@saga -->
-
-<!--@saga -->
-
-<!--@saga -->
-
-<!--@saga -->
-
-<!--@saga -->
-
-<!--@saga -->
-
-<!--@saga -->
-
+ 
 <!--@saga -->
 
 <!--@saga -->
@@ -828,7 +746,7 @@ Please let me know if there's anything specific you would like to modify or add 
 
 % Để phát triển tốt
 
-% cần tạo một bộ kiểm thử tích hợp tự động
+% cần tạo một bộ kiểm thử tích hợp tự động<!--@ Xong DDD -->
 
 CI/CD đã trình bày bên trên
 
