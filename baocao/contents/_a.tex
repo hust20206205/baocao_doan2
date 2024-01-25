@@ -26,27 +26,27 @@ Có 3 loại mối quan hệ giữa các bối cảnh bị giới hạn là:
 
 \end{figure}
 
-\subsection{Mối quan hệ đối xứng (Symmetric Relationship)}
+\subsubsection{Mối quan hệ đối xứng (Symmetric Relationship)}
 
-% % \subsubsection{Mô hình riêng biệt (Separate Ways)}
+\paragraph{Mô hình riêng biệt (Separate Ways)}
 
-% Mô hình riêng biệt (Separate Ways) khi các bối cảnh bị giới hạn có quan hệ riêng biệt, không có sự phụ thuộc. Vì vậy, các bối cảnh bị giới hạn này có ngôn ngữ, mô hình, mục đích độc lập và thực thi riêng biệt. Các nhóm phát triển không phải cộng tác hay phối hợp với nhau từ đó đem lại lợi ích dễ dàng bảo trì và mở rộng hệ thống.
+Khi các bối cảnh bị giới hạn có quan hệ riêng biệt, không có sự phụ thuộc. Vì vậy, các bối cảnh bị giới hạn này có ngôn ngữ, mô hình, mục đích độc lập và thực thi riêng biệt. Các nhóm phát triển không phải cộng tác hay phối hợp với nhau từ đó đem lại lợi ích dễ dàng bảo trì và mở rộng hệ thống.
 
-% \begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
+\begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
 
-% \begin{figure}[H]
+    \begin{figure}[H]
 
-% \centering
+    \centering
 
-% \includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+    \includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
 
-% \caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+    \caption{Ví dụ mô hình riêng biệt (Separate Ways)}
 
-% \end{figure}
+    \end{figure}
 
-% \end{example}
+\end{example}
 
-% % \subsubsection{Mô hình hạt nhân chung (Shared Kernel)}
+\paragraph{Mô hình hạt nhân chung (Shared Kernel)}
 
 % Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nhau. Mô hình hợp tác (Partnership) tạo điều kiện cho việc giao tiếp và cộng tác giữa các bối cảnh bị giới hạn phụ thuộc. Tuy nhiên, sự phụ thuộc này dẫn đến mức độ kết hợp cao giữa các nhóm và bối cảnh bị giới hạn, dẫn tới mất đi tính độc lập.
 
@@ -106,7 +106,7 @@ Có 3 loại mối quan hệ giữa các bối cảnh bị giới hạn là:
 
 % % %! $VD: hình giao như 2 tập hợp - - >
 
-\subsection{Mối quan hệ bất đối xứng (Asymmetric Relationship)}
+\subsubsection{Mối quan hệ bất đối xứng (Asymmetric Relationship)}
 
 % Trong mối quan hệ bất đối xứng, một bối cảnh bị giới hạn có sự phụ thuộc vào một bối cảnh bị giới hạn khác. Mối quan hệ này được mô tả bằng cách gán vai trò cho bối cảnh bị giới hạn :
 
@@ -162,7 +162,7 @@ Có 3 loại mối quan hệ giữa các bối cảnh bị giới hạn là:
 
 % \end{example}
 
-% % \subsubsection{Mô hình khách hàng - nhà cung cấp (Customer - Supplier)}
+% % \xxxxxxxxxxxxxxxxxxxxx{Mô hình khách hàng - nhà cung cấp (Customer - Supplier)}
 
 % Mô hình khách hàng - nhà cung cấp (Customer - Supplier) được thể hiện rằng bối cảnh bị giới hạn thượng nguồn đáp ứng nhu cầu của bối cảnh bị giới hạn hạ lưu.
 
@@ -178,7 +178,7 @@ Có 3 loại mối quan hệ giữa các bối cảnh bị giới hạn là:
 
 % Trong thực tế, nhóm phát triển nhà cung cấp luôn tham khảo ý kiến của nhóm phát triển khách hàng và có bộ kiểm thử để đảm bảo rằng dịch vụ của nhà cung cấp đáp ứng được yêu cầu của khách hàng.
 
-% % \subsubsection{Mô hình tuân thủ (Conformist)}
+% % \xxxxxxxxxxxxxxxxxxxxx{Mô hình tuân thủ (Conformist)}
 
 % Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp thực hiện tốt yêu cầu thì khách hàng cần tuân thủ chặt chẽ. Mô hình tuân thủ (Conformist) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu áp dụng mô hình, ngôn ngữ chung và các khái niệm của bối cảnh bị giới hạn thượng nguồn.
 
@@ -240,7 +240,7 @@ Có 3 loại mối quan hệ giữa các bối cảnh bị giới hạn là:
 
 % \end{example}
 
-% % \subsubsection{Mô hình chống đổ vỡ (Anti Corruption Layer)}
+% % \xxxxxxxxxxxxxxxxxxxxx{Mô hình chống đổ vỡ (Anti Corruption Layer)}
 
 % Trong mô hình khách hàng - nhà cung cấp, nếu nhà cung cấp có thể thay đổi linh hoạt không đảm bảo đáp ứng nhu cầu của khách hàng thì khách hàng cần có giải pháp xử lí. Mô hình chống đổ vỡ (Anti Corruption Layer) là một mối quan hệ trong đó bối cảnh bị giới hạn hạ lưu sử dụng một lớp để dịch giữa ngôn ngữ của nó và ngôn ngữ của bối cảnh bị giới hạn thượng nguồn.
 
@@ -302,9 +302,9 @@ Có 3 loại mối quan hệ giữa các bối cảnh bị giới hạn là:
 
 % \end{example}
 
-\subsection{Mối quan hệ 1 - nhiều (One to Many Relationship)}
+\subsubsection{Mối quan hệ 1 - nhiều (One to Many Relationship)}
 
-% % \subsubsection{Dịch vụ máy chủ mở (Open Host Service)}
+% % \xxxxxxxxxxxxxxxxxxxxx{Dịch vụ máy chủ mở (Open Host Service)}
 
 % Dịch vụ máy chủ mở (Open Host Service) là nhà cung cấp trong mô hình khách hàng - nhà cung cấp, dịch vụ máy chủ mở hiển thị một API công khai cho các bối cảnh bị giới hạn khác sử dụng chức năng của nhà cung cấp.
 
@@ -360,7 +360,7 @@ Có 3 loại mối quan hệ giữa các bối cảnh bị giới hạn là:
 
 % \end{example}
 
-% % \subsubsection{Ngôn ngữ được xuất bản (Published Language)}
+% % \xxxxxxxxxxxxxxxxxxxxx{Ngôn ngữ được xuất bản (Published Language)}
 
 % Khi ngôn ngữ chung ở dịch vụ máy chủ mở được các nhóm phát triển trong bối cảnh bị giới hạn hạ lưu chấp nhận. Ngôn ngữ chung này được gọi là ngôn ngữ được xuất bản (Published Language). Ngôn ngữ được xuất bản có lợi ích là tính thống nhất trong hệ thống tuy nhiên cần phân tích kĩ vì nó có thể tạo ra sự nhầm lẫn trong bối cảnh bị giới hạn hạ lưu nào đó.
 
