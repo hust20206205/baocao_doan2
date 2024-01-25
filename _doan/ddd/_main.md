@@ -2,54 +2,23 @@ Service Mesh
 CICD
 API gateway
 
-
-<!---->   
-
-<!--Nghiệp vụ của bài toán chính-->
-
-Video Viettel
-
-<!--@Chú ý ở đồ án này:-->
-
-Mã giao dịch điện tử = Mã số thuế + Thời gian đăng kí
-
-Sử dụng hàm ngẫu nhiên (tỉ lệ 10%) cho trường hợp từ chối.
-
-<!--Phân tích và thiết kế-->
-
-Xác định các tính năng cần thiết và các yêu cầu kỹ thuật tạo ra một thiết kế hệ thống hoặc kiến trúc đáp ứng.
-
-<!---->
-
-<!--Các công nghệ phổ biến trong kiến trúc vi dịch vụ-->
-
-Docker container.....
-
-Docker container.....
-
-Docker container.....
-
-Docker container.....
-
-[](0.9.KetLuan_TongKet.md)
-
-[](_.TaiLieuThamKhao.md)
+ 
 
 <!--RxJS-->
 
-https: //www.youtube.com/watch? v=6jSk_J7RA24
+https://www.youtube.com/watch?v=6jSk_J7RA24
 
-https: //www.youtube.com/watch? v=Jc-lGeDuphg
+https://www.youtube.com/watch?v=Jc-lGeDuphg
 
-https: //www.youtube.com/watch? v=UXHzxX4png0
+https://www.youtube.com/watch?v=UXHzxX4png0
 
-https: //www.youtube.com/watch? v=glZs4QFfwbc
+https://www.youtube.com/watch?v=glZs4QFfwbc
  
 
 
 # 7. Broker Pattern dịch vụ dicovery
 
-https: //www.youtube.com/watch? v=UXHzxX4png0
+https: //www.youtube.com/watch?v=UXHzxX4png0
 
 # 8. Dependency Injection
 
